@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JZC Blog</title>
+    <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Mon, 22 Apr 2019 11:55:44 +0000</pubDate>
+    <lastBuildDate>Mon, 22 Apr 2019 11:55:44 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Farewell, Flash. 感谢你，但这一次是真正的永别。</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;本文首发于我的知乎专栏 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/28109200&quot;&gt;The Little Programmer&lt;/a&gt;，转载请保留链接 ;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;一年半前，我曾和 Flash 作过一次告别。那一次，Adobe Flash Professional CC 被重新命名为了 Adobe Animate CC，宣告着 Flash 作为一个创作工具走到了尽头。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/in-post/post-f-f-weibo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;而今天，通过 Chromium 博客 &lt;a href=&quot;https://blog.chromium.org/2017/07/so-long-and-thanks-for-all-flash.html&quot;&gt;So long, and thanks for all the Flash&lt;/a&gt; 我才得知，Adobe 官博在 &lt;a href=&quot;https://blogs.adobe.com/conversations/2017/07/adobe-flash-update.html&quot;&gt;Flash &amp;amp; The Future of Interactive Content&lt;/a&gt; 一文中，宣布将在 2020 年底时停止发布与更新 Flash Player。这一次，意味着 Flash 作为一个平台走到了尽头。&lt;/p&gt;
+
+&lt;p&gt;在不少人眼里，Flash 与 HTML5 是纯粹的竞争关系，我们应该为 HTML5 与 Open Web 标准的胜利欢呼，而将 Flash 狠狠的咒骂在黄泉之下。但其实，大多数人都忘记了，或是从不曾知道：&lt;strong&gt;HTML5（严谨的来说，其 marketing 含义中所涵盖的那些 Web APIs），有很大一部分正是 Flash 平台、Flash 社区对 web 标准做出的贡献。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;正如 &lt;a href=&quot;https://blogs.adobe.com/conversations/2017/07/adobe-flash-update.html&quot;&gt;Flash &amp;amp; The Future of Interactive Content&lt;/a&gt; 所说：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Adobe has long played a leadership role in advancing interactivity and creative content – from video, to games and more – on the web. Where we’ve seen a need to push content and interactivity forward, we’ve innovated to meet those needs. &lt;strong&gt;Where a format didn’t exist, we invented one – such as with Flash and Shockwave. And over time, as the web evolved, these new formats were adopted by the community, in some cases formed the basis for open standards, and became an essential part of the web.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;当我们（企业、用户）需要 web 平台承载包括视频、游戏在内的各种富交互内容而 web 平台本身还不具备这样的能力时，我们通过给予这个平台一种新的格式，以满足大家的需求，这就是 Flash Player，作为一种私有平台与浏览器插件，却能一度成为 web 事实标准的客观原因。&lt;/p&gt;
+
+&lt;p&gt;而时至今日，这些 web 平台所欠缺的能力，在得到市场与社区的认可之后，逐渐被从 Flash 中吸收与扬弃，成为了诸如 HTML5 Video/Audio/Canvas、WebGL 这些真正的 Open Web 标准。这时候，这些在诞生之初颇为创新的，作为了一种「过渡手段」、「Shim」的私有平台，便自然而然的，慢慢的不再被需要了。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这并不应该理解为一种失败，而应该说，它们「功成身退」了。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;ActionScript 3.0，Flash 中的御用编程语言，作为 ES4 的唯一实现，&lt;a href=&quot;https://www.zhihu.com/question/49170215/answer/114640341&quot;&gt;推动了 ECMAScript 标准的发展，深远得影响着现代 JavaScript&lt;/a&gt;；&lt;/p&gt;
+
+&lt;p&gt;Adobe Flex，Flash 平台的企业开发框架，在今年和 &lt;a href=&quot;https://www.zhihu.com/people/sharpmaster&quot;&gt;@徐飞&lt;/a&gt; 老师聊到时，还一起怀念并认可其相比现代 web 前端/客户端开发在工具链、协作、兼容性、UI 组件等方面的先进与成熟；
+Adobe AIR，作为最早借鉴 JRT 将 web 相关技术的 Runtime 植入操作系统或捆绑在可执行文件内的跨平台开发方案，或许可以视作 Cordova、Electron、NodeWebkit、ReactNative 这些方案的一个前身与成功先例；&lt;/p&gt;
+
+&lt;p&gt;Microsoft IE 私有技术 ActiveX 中的 XMLHTTP，作为 XMLHTTPRequest 的前身，促进了 Ajax 的诞生与 Web 2.0 时代的来临；&lt;/p&gt;
+
+&lt;p&gt;Google Gears 作为 2008 年时为了增强 web 应用的浏览器插件，其私有 API 分别是 App Cache、Web Worker、WebSQL 等标准或标准未遂的前身；&lt;/p&gt;
+
+&lt;p&gt;Cordova/Phonegap 作为第一个面向移动端的 Hybrid 方案，成为了 web 开发与移动设备的 polyfill 与桥梁，加速了 Web 平台 Device APIs 的发展，并与 WebOS、FirefoxOS、Chrome Apps、Windows Runtime Apps 等一同影响了 Progressive Web App 的出现；&lt;/p&gt;
+
+&lt;p&gt;Google Extension 中 Background Page 与 Event Page 多年对 web 平台后台持续计算的尝试，直接帮助了 Service Worker 的 API 设计；&lt;/p&gt;
+
+&lt;p&gt;Google 的 NativeClient、Mozilla 的 asm.js 对于 web 追逐 native 性能的极致追求，则奠定了 Web Assembly 的诞生……&lt;/p&gt;
+
+&lt;p&gt;你看，在这条道路上，Flash 与它的朋友们，其实并不孤单。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;「看到你长大了，我也就可以心满意足的离开了。」&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;就像是， web 技术发展的必然规律一样，&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;而 Open Web 则因此不朽。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;我很高兴，Google Chrome、Mozilla Firefox、Microsoft Edge 都能这么写到：&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Flash helped make the web a rich, dynamic experience, and &lt;strong&gt;shaped the modern set of web standards.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;— “&lt;a href=&quot;https://blog.chromium.org/2017/07/so-long-and-thanks-for-all-flash.html&quot;&gt;So long, and thanks for all the Flash&lt;/a&gt;” Chromium Blog&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Over the years, Flash has helped bring the Web to greatness with innovations in media and animation, &lt;strong&gt;which ultimately have been added to the core web platform.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;— “&lt;a href=&quot;https://blog.mozilla.org/futurereleases/2017/07/25/firefox-roadmap-flash-end-life/&quot;&gt;Firefox Roadmap for Flash End-of-Life&lt;/a&gt;” Mozilla Blog&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Flash led the way on the web for rich content, gaming, animations, and media of all kinds, and &lt;strong&gt;inspired many of the current web standards powering HTML5.&lt;/strong&gt;&lt;/p&gt;
+
+  &lt;p&gt;— “&lt;a href=&quot;https://blogs.windows.com/msedgedev/2017/07/25/flash-on-windows-timeline/&quot;&gt;The End of an Era – Next Steps for Adobe Flash&lt;/a&gt;” Windows Blog&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;感谢你，Flash。&lt;/p&gt;
+
+&lt;p&gt;感谢你们，那些「功成身退」的你们。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019/07/26/farewell-flash/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/07/26/farewell-flash/</guid>
+        
+        <category>Web</category>
+        
+        <category>Flash</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Github博客搭建指南（JEKYLL框架）</title>
+        <description>&lt;h1 id=&quot;github博客搭建指南jekyll框架&quot;&gt;Github博客搭建指南（JEKYLL框架）&lt;/h1&gt;
+
+&lt;p&gt;这篇文章将介绍如何用JEKYLL框架搭建github博客。国内关于jekyll的文章比较少，大多数都是基于hexo搭建博客的。然而github官方推荐jekyll，所以我就用它了。折腾几天，终于学会了，这里面坑有点多，页面美化也有点麻烦。下面详细的介绍下搭建的步骤和过程。&lt;/p&gt;
+
+&lt;p&gt;自从github Page功能推出以来， 很多人都在github上搭建博客。确实，github Page的优点非常多，比如无限流量、免费服务器、一键上传部署等等。
+github Pages可以被认为是用户编写的、托管在github上的静态网页，我们可以把团队、项目、个人网页上传到github，别人访问非常方便。&lt;/p&gt;
+
+&lt;p&gt;前提条件&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;有github账号&lt;/li&gt;
+  &lt;li&gt;会 Git 和 Linux&lt;/li&gt;
+  &lt;li&gt;会 docker (JEKYLL依赖项有点多，所以推荐用docker)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;github Page 介绍 https://pages.github.com/&lt;br /&gt;
+JEKYLL 介绍 https://jekyllrb.com/&lt;br /&gt;
+jekyll镜像地址 https://github.com/envygeeks/jekyll-docker/blob/master/README.md&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;开始&quot;&gt;开始&lt;/h1&gt;
+&lt;p&gt;注意，下面都是在Linux环境中操作的&lt;/p&gt;
+&lt;h2 id=&quot;创建仓库&quot;&gt;创建仓库&lt;/h2&gt;
+&lt;p&gt;这一步参考 https://pages.github.com/  ，创建含有hello world的index.html。&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;在github上创建一个仓库，名称是“你的Github账号名.github.io”&lt;/li&gt;
+  &lt;li&gt;编辑内容，仓库上传之后，网页也会随之更新，最后看到hello页面&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;安装jekyll&quot;&gt;安装jekyll&lt;/h2&gt;
+&lt;p&gt;现在的页面太简单了，没有帖子、没有图片，距离博客还差得远。我们要使用jekyll框架来生成静态网页，提供丰富多样的页面效果。&lt;/p&gt;
+
+&lt;p&gt;jekyll是一个基于ruby开发的，专用于构建静态网站的程序。它能够将一些动态的组件：模板、liquid代码等构建成静态的页面集合，Github-Page全面引入jekyll作为其构建引擎，这也是学习jekyll的主要动力。同时，除了jekyll引擎本身，它还提供一整套功能，比如web server。我们用jekyll –server启动本地调试就是此项功能。读者可能已经发现，在启动server后，之前我们的项目目录下会多出一个_site目录。jekyll默认将转化的静态页面保存在_site目录下，并以某种方式组织。使用jekyll构建博客是十分适合的，因为其内建的对象就是专门为blog而生的，在后面的逐步介绍中读者会体会到这一点。但是需要强调的是，jekyll并不是博客软件，跟workpress之类的完全两码事，它仅仅是个一次性的模板解析引擎，它不能像动态服务端脚本那样处理请求。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;摘录 https://www.ezlippi.com/blog/2015/03/github-pages-blog.html&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;因为安装jekyll比较麻烦，所以我用docker创建一个jekyll容器，但还需要在容器内部安装一些插件。&lt;/p&gt;
+
+&lt;p&gt;进入博客仓库 &lt;code class=&quot;highlighter-rouge&quot;&gt;cd ~/jiangzc.github.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;创建jekyll容器&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# In containree&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 容器名为jekyll&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 当前目录映射到容器内部的/srv/jekyll&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 端口映射4000:400, 进入bash&lt;/span&gt;
+docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; jekyll &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:/srv/jekyll&quot;&lt;/span&gt;  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:4000	 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt; jekyll/builder:3.8  bash
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;替换gem源
+gem install 速度非常慢，有时会卡，所以要用清华大学的镜像&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;参考 https://mirror.tuna.tsinghua.edu.cn/help/rubygems/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# In container&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 添加 TUNA 源并移除默认源&lt;/span&gt;
+gem sources &lt;span class=&quot;nt&quot;&gt;--add&lt;/span&gt; https://mirrors.tuna.tsinghua.edu.cn/rubygems/ &lt;span class=&quot;nt&quot;&gt;--remove&lt;/span&gt; https://rubygems.org/
+&lt;span class=&quot;c&quot;&gt;# 列出已有源&lt;/span&gt;
+gem sources &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 应该只有 TUNA 一个&lt;/span&gt;
+
+bash bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;容器内部，安装可能用到的插件&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;bundle update
+gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;redcarpet &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pygments.rb
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;接下来测试 jekyll&lt;br /&gt;
+按照&lt;a href=&quot;https://jekyllrb.com/docs/&quot;&gt;官网&lt;/a&gt;的QuickStart部分，从第三步&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll new myblog&lt;/code&gt;开始做，查看页面效果&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;如果遇到依赖项错误，根据提示安装 Run &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle install&lt;/code&gt; to install missing gems.&lt;br /&gt;
+如果执行 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt; 有问题
+就执行 &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve &lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;blog_pics/pic1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;成功，接下来&lt;del&gt;阅读官方文档，从头开始，闭门造车&lt;/del&gt;，当然是使用别人配置好的模板适当修改，我们就能做出自己的博客啦。  &lt;br /&gt;
+在网上随便找了一些：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.zhihu.com/question/20223939&quot;&gt;有哪些简洁明快的 Jekyll 模板？&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;Jekyll Themes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.chairyfish.com/BeautifulJekyllTheme/&quot;&gt;BeautifulJekyllTheme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;下载模板&quot;&gt;下载模板&lt;/h2&gt;
+&lt;p&gt;接下来以 &lt;a href=&quot;https://taylantatli.github.io/Moon/&quot;&gt;Moon主题&lt;/a&gt; 为例，说明配置方法&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;项目地址 https://github.com/TaylanTatli/Moon &lt;br /&gt;
+DEMO  https://taylantatli.github.io/Moon/&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;删除刚才测试的myblog文件夹，回到jiangzc.github.io目录 &lt;br /&gt;
+下载Moon的zip压缩包，解压到你的博客文件夹,目录树像这样&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# jzc @ Precision in ~ [14:06:15] &lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;tree &lt;span class=&quot;nt&quot;&gt;-dL&lt;/span&gt; 1 jiangzc.github.io
+jiangzc.github.io
+├── about
+├── assets
+├── _data
+├── _includes
+├── _layouts
+├── myblog
+├── posts
+├── _posts
+├── projects
+├── _sass
+├── _site
+└── tags
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;在容器里，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;， 可能要解决依赖项问题 &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install ...&lt;/code&gt;&lt;br /&gt;
+浏览器访问http://localhost:4000 ， 效果如下
+&lt;img src=&quot;blog_pics/pic2.png&quot; alt=&quot;&quot; /&gt;
+后续配置参考 https://taylantatli.github.io/Moon/moon-theme/ ，完成后用&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;重新生成页面，本地确认后push到github上就可以了。&lt;/p&gt;
+
+&lt;h2 id=&quot;相关资料&quot;&gt;相关资料&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.ezlippi.com/blog/2015/03/github-pages-blog.html&quot;&gt;利用github-pages建立个人博客&lt;/a&gt;  非常好 &lt;br /&gt;
+&lt;a href=&quot;https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B&quot;&gt;博客搭建详细教程&lt;/a&gt;
+ 很详细，但没有使用jekyll框架，它是基于成品修改的，不够个性化&lt;br /&gt;
+&lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot;&gt;阮一峰的网络日志&lt;/a&gt; 推荐看一下&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019/04/22/blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/22/blog/</guid>
+        
+        <category>github</category>
+        
+        <category>博客</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>程序员中的梦想家</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;本文首发于我的知乎专栏 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/38722466&quot;&gt;The Little Programmer&lt;/a&gt;，转载请保留链接 ;)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;有一类程序员是 visionary 型的，为了实现一些超前的 idea，绕过某些技术的限制，他们写的 code 晦涩高深得只有他们自己能懂，做出来的 tool 看上去很美好结果处处是坑出了 bug 根本没法查，但正是这类人不断创造出新的东西，在洗礼之后成为一个个 big thing。&lt;/p&gt;
+
+&lt;p&gt;我每周都要被 infra 的坑 block 得无法工作几次搞得非常沮丧，后来我发现这个锅除了要扔给 FB 外，还有一大半要扔给我周围这群 visionary 的同事们，我工作直接需要接触到的区区五六个人，发起/创造了 Infer, React, Reason, ReasonReact, BuckleScript…&lt;/p&gt;
+
+&lt;p&gt;所以这大概就是见证/参与这些 idea 成长的代价吧，也意识到这些东西不是在刚开始就像后来大家接受流行时那么美好的。React 发布 5 周年生日时回放 Jordan/Tom 2013 年第一次对外发布 React/JSX 的视频。我问 Jordan 说你后来怎么没再去分享了。他说你不知道我那天讲完下来被所有听众指着批评。React 第一次在内部使用是 2011 年在 news feed，然后是 2012 年 instagram (pete hunt)，所以这个时间其实很长很长。&lt;/p&gt;
+
+&lt;p&gt;很多人（包括我）都会经常觉得 XYZ 新事物跟老东西比太新、太不成熟、体验太不好、想要解决的问题太多、解决方案太 overkill、然后就没有然后了，但其实说不定你在看的这个就是 next big thing 呢。这些梦想家们 vision 里的 big picture 太大了，有的人可能在半个 picture 出来的时候就可以看出来了，有的人则可能要等到整个 picture 都快填满了才看得出来。&lt;/p&gt;
+
+&lt;p&gt;如果不是因为 Ads/Messenger 的坑深 React/Reason/Flux 也就不会在这里诞生了，&lt;/p&gt;
+
+&lt;p&gt;如果不是因为 Facebook 的坑深 GraphQL/Infer/Hack/Flow/Buck 也就不会在这里诞生了。&lt;/p&gt;
+
+&lt;p&gt;正是有一群开垦者不怕坑深才使得各种 idea 成为了大家手上好用的 tool 啊。&lt;/p&gt;
+
+&lt;p&gt;梦想家程序员们的工作价值于实干主义的程序员，总是很容易在过程中被低估、忽视，或是得不到尊重。而又在流行之后被神化，仿佛是那个人早已洞察一切一样。其实梦想家的工作，也是一点点累加，一点点迭代起来的。他们也需要伯乐和追随者的支持和帮助。&lt;/p&gt;
+
+&lt;p&gt;Chenglou 这个人总是在巨兴奋与巨沮丧之间切换，这段时间下来，我开始能感受这种情绪的来源了。&lt;/p&gt;
+
+&lt;p&gt;他总是用一句话来总结他回答我的吐槽、抱怨、疑问、惊叹，我就用这句话来结尾好了：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;“Welcome to the producer side!”&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/06/30/dreamer/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/06/30/dreamer/</guid>
+        
+        <category>Facebook</category>
+        
+        <category>生活</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>「知乎」如何证明不可计算的函数比可计算的函数多？</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/51508063/answer/275401076&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;严谨的证明的话，可以使用「形式语言」（&lt;a href=&quot;https://en.wikipedia.org/wiki/Formal_language&quot;&gt;Formal language&lt;/a&gt;）来证明：&lt;/p&gt;
+
+&lt;p&gt;在可计算理论和计算复杂度理论中，每个「计算问题」都被描述为一个一个「形式语言」，即字符串的集合。比如对于判断一个图是否是无向连通图这个问题：我们可以写为一个描述所有无向连通图的集合：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;A = \{ \langle G \rangle \vert G \text{ is a connected undirected graph}\}&lt;/script&gt;
+
+&lt;p&gt;由于图灵机只能接受字符串，所以这里的尖括号表示对图的「编码」。出于简单，我们全部使用现实计算机所使用的字母表
+$\Sigma = \{0, 1\}$，所以「编码」即一个对象的二进制字符串描述。&lt;/p&gt;
+
+&lt;p&gt;如果我们能构造出一个图灵机来「决定」这个「形式语言」，即可以判断一个「输入」是否属于这个集合（membership 与 non-membership），那么我们可以说我们用「图灵机」描述了一个「算法」来计算这个问题，而这个「计算问题」所对应的函数是「可计算的」，否则是「不可计算的」。（注 1）&lt;/p&gt;
+
+&lt;p&gt;那么，如果我们有一个包含了所有「可计算函数」的集合，这个集合会有多大呢？&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;由于&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;所有「可计算函数」总有一个对应的「图灵机」来计算它&lt;/li&gt;
+  &lt;li&gt;每一个「图灵机」都可以被「编码」为一个不同的 0、1 序列，比如 000，010…&lt;/li&gt;
+  &lt;li&gt;0、1 序列、即二进制，总是可以被转换为一个十进制数的&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;所以，我们这个集合实际上是与整数集 $Z$ 一样大（等势）的，我们把这个集合表示为 $\Sigma^{*}$。 易知 $Z$ 是「无穷可数（countably infinite）」的，所以我们有无穷可数个「可计算函数」（注 2）。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;而「计算问题」有多少个呢？&lt;/p&gt;
+
+&lt;p&gt;这个问题可以等同于，我们有多少个形如 $\{000, 010\}$ 这样的 0，1 序列的集合？即 $\Sigma^{*}$ 这个集合有多少个子集？用数学语言描述就是求 $\Sigma^{*}$ 的幂集的势 $| P(\Sigma^{*})|$ 。&lt;/p&gt;
+
+&lt;p&gt;由于 $\Sigma^{*}$ 与 $Z$ 是等势的，所以这个问题等价于求 $|P(Z)|$ 的大小。根据 &lt;a href=&quot;https://en.wikipedia.org/wiki/Cantor%2527s_theorem&quot;&gt;Cantor’s theorem&lt;/a&gt;，一个「无穷可数」的集合的幂集是「无穷不可数（uncountably infinite）」的。（注 3）&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;根据 &lt;a href=&quot;https://en.wikipedia.org/wiki/Cantor%2527s_theorem&quot;&gt;Cantor’s theorem&lt;/a&gt;，「无穷不可数集」要比「无穷可数集」大。&lt;/p&gt;
+
+&lt;p&gt;同时，「无穷不可数集」减去「无穷可数集」后仍然是「无穷不可数集」。（注 4）&lt;/p&gt;
+
+&lt;p&gt;所以，「不可计算函数集」，即「计算问题集」与「可计算函数集」的差，仍是「无穷不可数集」，仍比是为「无穷可数集」的「可计算函数集」大。&lt;/p&gt;
+
+&lt;p&gt;因此，「不可计算的函数」比「可计算的函数」多。&lt;/p&gt;
+
+&lt;p&gt;证毕。&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;注：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;「&lt;a href=&quot;https://en.wikipedia.org/wiki/Computable_function&quot;&gt;可计算函数&lt;/a&gt;」是算法的直觉说法，「&lt;a href=&quot;https://en.wikipedia.org/wiki/Church%25E2%2580%2593Turing_thesis&quot;&gt;邱奇－图灵论题&lt;/a&gt;」猜想任何在算法上可计算的问题同样可以由图灵机计算。但图灵机并不是唯一的计算模型，其他计算模型包括「&lt;a href=&quot;https://en.wikipedia.org/wiki/Lambda_calculus&quot;&gt;Lambda 算子&lt;/a&gt;」、「$\mu$ - &lt;a href=&quot;https://en.wikipedia.org/wiki/%25CE%259C-recursive_function&quot;&gt;递归函数&lt;/a&gt;」等，它们在计算能力上都是与「图灵机」等价的。&lt;/li&gt;
+  &lt;li&gt;证明「所有可计算函数」的集合是「无穷可数集」的方式有很多，只要找到任意一个与「自然数集」的「双射」即可&lt;/li&gt;
+  &lt;li&gt;也可以直接用康托的对角线法（&lt;a href=&quot;https://en.wikipedia.org/wiki/Cantor%2527s_diagonal_argument&quot;&gt;Cantor’s diagonal argument&lt;/a&gt;）证明「所有计算问题」的集合是「无穷不可数集」&lt;/li&gt;
+  &lt;li&gt;可以用反证法得证&lt;/li&gt;
+  &lt;li&gt;知乎能用 LaTex 了好评&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Aleph_number&quot;&gt;Aleph Number - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2017/12/12/uncomputable-funcs/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/12/uncomputable-funcs/</guid>
+        
+        <category>知乎</category>
+        
+        <category>计算机科学</category>
+        
+        <category>计算理论</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>「知乎」如何通俗地解释停机问题？</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/20081359/answer/275107187&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;我用 Python 伪代码来解释下，我觉得对这个问题有兴趣的应该都是有点编程基础的，所以直接上 code 应该是最容易的。&lt;/p&gt;
+
+&lt;h2 id=&quot;背景知识&quot;&gt;背景知识&lt;/h2&gt;
+
+&lt;p&gt;「停机问题」研究的是：是否存在一个「程序」，能够判断另外一个「程序」在特定的「输入」下，是会给出结果（停机），还是会无限执行下去（不停机）。&lt;/p&gt;
+
+&lt;p&gt;在下文中，我们用「函数」来表示「程序」，「函数返回」即表示给出了结果。&lt;/p&gt;
+
+&lt;h2 id=&quot;正文&quot;&gt;正文&lt;/h2&gt;
+
+&lt;p&gt;我们假设存在这么一个「停机程序」，不管它是怎么实现的，但是它能够回答「停机问题」：它接受一个「程序」和一个「输入」，然后判断这个「程序」在这个「输入」下是否能给出结果：&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# 返回 True  如果 program(input) 会返回
+&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 返回 False 如果 program(input) 不返回
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;（在这里，我们通过把一个函数作为另一个函数的输入来描述一个「程序」作为另一个「程序」的「输入」，如果你不熟悉「头等函数」的概念，你可以把所有文中的函数对应为一个具备该函数的对象。）&lt;/p&gt;
+
+&lt;p&gt;为了帮助大家理解这个「停机程序」的功能，我们举个使用它的例子：&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;halt&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# 如果输入是 0，返回，否则无限循环
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 返回 True
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 返回 False
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;是不是很棒？&lt;/p&gt;
+
+&lt;p&gt;不过，如果这个「停机程序」真的存在，那么我就可以写出这么一个「hack 程序」：&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;halt&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这个程序说，如果你 &lt;code class=&quot;highlighter-rouge&quot;&gt;is_halt&lt;/code&gt; 对 &lt;code class=&quot;highlighter-rouge&quot;&gt;program(program)&lt;/code&gt; 判停了，我就无限循环；如果你判它不停，我就立刻返回。&lt;/p&gt;
+
+&lt;p&gt;那么，如果我们把「hack 程序」同时当做「程序」和「输入」喂给「停机程序」，会怎么样呢？&lt;/p&gt;
+
+&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;你会发现，如果「停机程序」认为 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 会给出结果，即 &lt;code class=&quot;highlighter-rouge&quot;&gt;is_halt(hack, hack)&lt;/code&gt;) 返回 &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt;) ，那么实际上 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 会进入无限循环。而如果「停机程序」认为 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 不会给出结果，即 &lt;code class=&quot;highlighter-rouge&quot;&gt;is_halt(hack, hack)&lt;/code&gt; 返回 ，那么实际上 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 会立刻返回结果……&lt;/p&gt;
+
+&lt;p&gt;这里就出现了矛盾和悖论，所以我们只能认为，我们最开始的假设是错的：&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;这个「停机程序」是不存在的。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;意义&quot;&gt;意义&lt;/h2&gt;
+
+&lt;p&gt;简单的说，「停机问题」说明了现代计算机并不是无所不能的。&lt;/p&gt;
+
+&lt;p&gt;上面的例子看上去是刻意使用「自我指涉」来进行反证的，但这只是为了证明方便。实际上，现实中与「停机问题」一样是现代计算机「不可解」的问题还有很多，比如所有「判断一个程序是否会在某输入下怎么样？」的算法、Hilbert 第十问题等等，wikipedia 甚至有一个 &lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/List_of_undecidable_problems&quot;&gt;List of undecidable problems&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;漫谈&quot;&gt;漫谈&lt;/h2&gt;
+
+&lt;p&gt;如果你觉得只是看懂了这个反证法没什么意思：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;最初图灵提出「停机问题」只是针对「图灵机」本身的，但是其意义可以被推广到所有「算法」、「程序」、「现代计算机」甚至是「量子计算机」。&lt;/li&gt;
+  &lt;li&gt;实际上「图灵机」只能接受（纸带上的）字符串，所以在图灵机编程中，无论是「输入」还是另一个「图灵机」，都是通过编码来表示的。&lt;/li&gt;
+  &lt;li&gt;「图灵机的计算能力和现代计算机是等价的」，更严谨一些，由于图灵机作为一个假象的计算模型，其储存空间是无限大的，而真实计算机则有硬件限制，所以我们只能说「不存在比图灵机计算能力更强的真实计算机」。&lt;/li&gt;
+  &lt;li&gt;这里的「计算能力」（power）指的是「能够计算怎样的问题」（capablity）而非「计算效率」（efficiency），比如我们说「上下文无关文法」比「正则表达式」的「计算能力」强因为它能解决更多的计算问题。&lt;/li&gt;
+  &lt;li&gt;「图灵机」作为一种计算模型形式化了「什么是算法」这个问题（&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Church%25E2%2580%2593Turing_thesis&quot;&gt;邱奇－图灵论题&lt;/a&gt;）。但图灵机并不是唯一的计算模型，其他计算模型包括「&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Lambda_calculus&quot;&gt;Lambda 算子&lt;/a&gt;」、&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/%25CE%259C-recursive_function&quot;&gt;μ-递归函数&lt;/a&gt;」等，它们在计算能力上都是与「图灵机」等价的。因此，我们可以用「图灵机」来证明「&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Computable_function&quot;&gt;可计算函数&lt;/a&gt;」的上界。也因此可以证明哪些计算问题是超出上界的（即不可解的）。&lt;/li&gt;
+  &lt;li&gt;需要知道的是，只有「可计算的」才叫做「算法」。&lt;/li&gt;
+  &lt;li&gt;「停机问题」响应了「哥德尔的不完备性定理」。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;拓展阅读&quot;&gt;拓展阅读：&lt;/h2&gt;
+
+&lt;p&gt;中文：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//www.matrix67.com/blog/archives/55&quot;&gt;Matrix67: 不可解问题(Undecidable Decision Problem)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//www.matrix67.com/blog/archives/901&quot;&gt;Matrix67: 停机问题、Chaitin 常数与万能证明方法&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//blog.csdn.net/pongba/article/details/1336028&quot;&gt;刘未鹏：康托尔、哥德尔、图灵–永恒的金色对角线(rev#2) - CSDN 博客&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//www.changhai.org/articles/science/mathematics/hilbert10/1.php&quot;&gt;卢昌海：Hilbert 第十问题漫谈 (上)&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;英文：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Introduction_to_the_Theory_of_Computation&quot;&gt;《Introduction to the Theory of Computation》&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DdNRDvLACg5Q&quot;&gt;Turing Machines Explained - Computerphile&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DmacM_MtS_w4%26t%3D29s&quot;&gt;Turing &amp;amp; The Halting Problem - Computerphile&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//cs.stackexchange.com/questions/32845/why-really-is-the-halting-problem-so-important&quot;&gt;Why, really, is the Halting Problem so important?&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2017/12/12/halting-problem/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/12/12/halting-problem/</guid>
+        
+        <category>知乎</category>
+        
+        <category>计算机科学</category>
+        
+        <category>计算理论</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>「知乎」为什么 CSS 这么难学？</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/66167982/answer/240434582&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;对我来说，CSS 难学以及烦人是因为它&lt;strong&gt;「出乎我意料之外的复杂」&lt;/strong&gt;且让我觉得&lt;strong&gt;「定位矛盾」&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;//www.zhihu.com/people/b90c7eb6d3d5a4e2ce453dd8ad377672&quot;&gt;@方应杭&lt;/a&gt; 老师的答案我赞了：CSS 的属性互不正交，大量的依赖与耦合难以记忆。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;//www.zhihu.com/people/596c0a5fdd9b36cea06bac348d418824&quot;&gt;@顾轶灵&lt;/a&gt; &lt;a href=&quot;//www.zhihu.com/people/c02ec74a44ee4a6784d002c33e293652&quot;&gt;@王成&lt;/a&gt; 说得也没错：CSS 的很多规则是贯彻整个体系的，而且都记在规范里了，是有规律的，你应该好好读文档而不是去瞎试。&lt;/p&gt;
+
+&lt;p&gt;「&lt;strong&gt;CSS是一门正儿八经的编程语言，请拿出你学C++或者Java的态度对待它&lt;/strong&gt;」&lt;/p&gt;
+
+&lt;p&gt;但是问题就在这了，无论从我刚学习前端还是到现在，我都没有把 CSS 作为一门正儿八经的编程语言（&lt;strong&gt;而且显然图灵不完全的它也不是&lt;/strong&gt;），CSS 在我眼里一直就是一个布局、定义视觉样式用的 DSL，与 HTML 一样就是一个标记语言。&lt;/p&gt;
+
+&lt;p&gt;写 CSS 很有趣，CSS 中像继承、类、伪类这样的设计确实非常迎合程序员的思路，各种排列组合带来了很多表达上的灵活性。但如果可以选择，在生产环境里我更愿意像 iOS/Android/Windows 开发那样，把这门 DSL 作为 IDE WYSIWYG 编辑器的编译目标就可以了，当然你可以直接编辑生成的代码，但我希望「对于同一种效果，有比较确定的 CSS 表达方式」&lt;/p&gt;
+
+&lt;p&gt;因为我并不在 CSS 里处理数据结构，写算法、业务逻辑啊，我就是希望我能很精确得表达我想要的视觉效果就可以了。如果我需要更复杂的灵活性和控制，你可以用真正的编程语言来给我暴露 API，而不是在 CSS 里给我更多的「表达能力」&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;CSS 语言本身的表达能力对于布局 DSL 来说是过剩的&lt;/strong&gt;，所以你仅仅用 CSS 的一个很小的子集就可以在 React Native 里搞定 iOS/Android 的布局了。你会发现各个社区（典型如 React）、团队都要花很多时间去找自己项目适合的那个 CSS 子集（so called 最佳实践）。而且 CSS 的这种复杂度其实还挺严重得影响了浏览器的渲染性能，很多优化变得很难做。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;而 CSS 的表达能力对于编程语言来说又严重不够&lt;/strong&gt;，一是语言特性不够，所以社区才会青睐 Less、Sass 这些编译到 CSS 的语言，然后 CSS 自己也在加不痛不痒的 Variable。二是 API 不够，就算你把规范读了，你会发现底层 CSSOM 的 Layout、Rendering 的东西你都只能强行用声明式的方式去 hack（比如用 transform 开新的 composition layer）而没有真正的 API 可以用，所以 W3C 才会去搞 Houdini 出来。&lt;/p&gt;
+
+&lt;p&gt;这种不上不下的感觉就让我觉得很「矛盾」，你既没法把 CSS 当一个很简单的布局标记语言去使用，又没办法把它作为一个像样的编程语言去学习和使用。&lt;/p&gt;
+
+&lt;p&gt;在写 CSS 和 debug CSS 的时候我经常处在一种「MD 就这样吧反正下次还要改」和「MD 这里凭什么是这样的我要研究下」的精分状态，可是明明我写 CSS 最有成就感的时候是看到漂亮的 UI 啊。&lt;/p&gt;
+
+&lt;p&gt;以上。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2017/10/06/css-complaints/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/10/06/css-complaints/</guid>
+        
+        <category>Web</category>
+        
+        <category>CSS</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>

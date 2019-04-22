@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Github博客搭建指南（JEKYLL框架） - JZC的博客 | JZC Blog">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Github博客搭建指南（JEKYLL框架）
+
+">
+    
+    <meta property="article:published_time" content="2019-04-22T00:00:00Z">
+    
+    
+    <meta property="article:author" content="JZC">
+    
+    
+    <meta property="article:tag" content="github">
+    
+    <meta property="article:tag" content="博客">
+    
+    
+    <meta property="og:image" content="http://localhost:4000/img/avatar-hux-ny.jpg">
+    <meta property="og:url" content="http://localhost:4000/2019/04/22/blog/">
+    <meta property="og:site_name" content="JZC的博客 | JZC Blog">
+    
+    <title>Github博客搭建指南（JEKYLL框架） - JZC的博客 | JZC Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2019/04/22/blog/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">JZC Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg');
+        background: ;
+    }
+
+    
+</style>
+
+<header class="intro-header" >
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=github" title="github">github</a>
+                        
+                        <a class="tag" href="/archive/?tag=%E5%8D%9A%E5%AE%A2" title="博客">博客</a>
+                        
+                    </div>
+                    <h1>Github博客搭建指南（JEKYLL框架）</h1>
+                    
+                    <h2 class="subheading"></h2>
+                    <span class="meta">Posted by JZC on April 22, 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<h1 id="github博客搭建指南jekyll框架">Github博客搭建指南（JEKYLL框架）</h1>
+
+<p>这篇文章将介绍如何用JEKYLL框架搭建github博客。国内关于jekyll的文章比较少，大多数都是基于hexo搭建博客的。然而github官方推荐jekyll，所以我就用它了。折腾几天，终于学会了，这里面坑有点多，页面美化也有点麻烦。下面详细的介绍下搭建的步骤和过程。</p>
+
+<p>自从github Page功能推出以来， 很多人都在github上搭建博客。确实，github Page的优点非常多，比如无限流量、免费服务器、一键上传部署等等。
+github Pages可以被认为是用户编写的、托管在github上的静态网页，我们可以把团队、项目、个人网页上传到github，别人访问非常方便。</p>
+
+<p>前提条件</p>
+<ol>
+  <li>有github账号</li>
+  <li>会 Git 和 Linux</li>
+  <li>会 docker (JEKYLL依赖项有点多，所以推荐用docker)</li>
+</ol>
+
+<blockquote>
+  <p>github Page 介绍 https://pages.github.com/<br />
+JEKYLL 介绍 https://jekyllrb.com/<br />
+jekyll镜像地址 https://github.com/envygeeks/jekyll-docker/blob/master/README.md</p>
+</blockquote>
+
+<h1 id="开始">开始</h1>
+<p>注意，下面都是在Linux环境中操作的</p>
+<h2 id="创建仓库">创建仓库</h2>
+<p>这一步参考 https://pages.github.com/  ，创建含有hello world的index.html。</p>
+<ol>
+  <li>在github上创建一个仓库，名称是“你的Github账号名.github.io”</li>
+  <li>编辑内容，仓库上传之后，网页也会随之更新，最后看到hello页面</li>
+</ol>
+
+<h2 id="安装jekyll">安装jekyll</h2>
+<p>现在的页面太简单了，没有帖子、没有图片，距离博客还差得远。我们要使用jekyll框架来生成静态网页，提供丰富多样的页面效果。</p>
+
+<p>jekyll是一个基于ruby开发的，专用于构建静态网站的程序。它能够将一些动态的组件：模板、liquid代码等构建成静态的页面集合，Github-Page全面引入jekyll作为其构建引擎，这也是学习jekyll的主要动力。同时，除了jekyll引擎本身，它还提供一整套功能，比如web server。我们用jekyll –server启动本地调试就是此项功能。读者可能已经发现，在启动server后，之前我们的项目目录下会多出一个_site目录。jekyll默认将转化的静态页面保存在_site目录下，并以某种方式组织。使用jekyll构建博客是十分适合的，因为其内建的对象就是专门为blog而生的，在后面的逐步介绍中读者会体会到这一点。但是需要强调的是，jekyll并不是博客软件，跟workpress之类的完全两码事，它仅仅是个一次性的模板解析引擎，它不能像动态服务端脚本那样处理请求。</p>
+<blockquote>
+  <p>摘录 https://www.ezlippi.com/blog/2015/03/github-pages-blog.html</p>
+</blockquote>
+
+<p>因为安装jekyll比较麻烦，所以我用docker创建一个jekyll容器，但还需要在容器内部安装一些插件。</p>
+
+<p>进入博客仓库 <code class="highlighter-rouge">cd ~/jiangzc.github.io</code></p>
+
+<p>创建jekyll容器</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="c"># In containree</span>
+<span class="c"># 容器名为jekyll</span>
+<span class="c"># 当前目录映射到容器内部的/srv/jekyll</span>
+<span class="c"># 端口映射4000:400, 进入bash</span>
+docker run <span class="nt">--name</span> jekyll <span class="se">\</span>
+  <span class="nt">--volume</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">:/srv/jekyll"</span>  <span class="se">\</span>
+  <span class="nt">-p</span> 4000:4000	 <span class="se">\</span>
+  <span class="nt">-it</span> jekyll/builder:3.8  bash
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>替换gem源
+gem install 速度非常慢，有时会卡，所以要用清华大学的镜像</p>
+<blockquote>
+  <p>参考 https://mirror.tuna.tsinghua.edu.cn/help/rubygems/</p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="c"># In container</span>
+<span class="c"># 添加 TUNA 源并移除默认源</span>
+gem sources <span class="nt">--add</span> https://mirrors.tuna.tsinghua.edu.cn/rubygems/ <span class="nt">--remove</span> https://rubygems.org/
+<span class="c"># 列出已有源</span>
+gem sources <span class="nt">-l</span>
+<span class="c"># 应该只有 TUNA 一个</span>
+
+bash bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu.cn/rubygems
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>容器内部，安装可能用到的插件</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>bundle update
+gem <span class="nb">install </span>redcarpet <span class="o">&amp;&amp;</span> gem <span class="nb">install </span>pygments.rb
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>接下来测试 jekyll<br />
+按照<a href="https://jekyllrb.com/docs/">官网</a>的QuickStart部分，从第三步<code class="highlighter-rouge">jekyll new myblog</code>开始做，查看页面效果</p>
+<blockquote>
+  <p>如果遇到依赖项错误，根据提示安装 Run <code class="highlighter-rouge">bundle install</code> to install missing gems.<br />
+如果执行 <code class="highlighter-rouge">bundle exec jekyll serve</code> 有问题
+就执行 <code class="highlighter-rouge">jekyll serve </code></p>
+</blockquote>
+
+<p><img src="blog_pics/pic1.png" alt="" /></p>
+
+<p>成功，接下来<del>阅读官方文档，从头开始，闭门造车</del>，当然是使用别人配置好的模板适当修改，我们就能做出自己的博客啦。  <br />
+在网上随便找了一些：</p>
+<ul>
+  <li><a href="https://www.zhihu.com/question/20223939">有哪些简洁明快的 Jekyll 模板？</a></li>
+  <li><a href="http://jekyllthemes.org/">Jekyll Themes</a></li>
+  <li><a href="https://www.chairyfish.com/BeautifulJekyllTheme/">BeautifulJekyllTheme</a></li>
+</ul>
+
+<h2 id="下载模板">下载模板</h2>
+<p>接下来以 <a href="https://taylantatli.github.io/Moon/">Moon主题</a> 为例，说明配置方法</p>
+<blockquote>
+  <p>项目地址 https://github.com/TaylanTatli/Moon <br />
+DEMO  https://taylantatli.github.io/Moon/</p>
+</blockquote>
+
+<p>删除刚才测试的myblog文件夹，回到jiangzc.github.io目录 <br />
+下载Moon的zip压缩包，解压到你的博客文件夹,目录树像这样</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+</pre></td><td class="rouge-code"><pre><span class="c"># jzc @ Precision in ~ [14:06:15] </span>
+<span class="nv">$ </span>tree <span class="nt">-dL</span> 1 jiangzc.github.io
+jiangzc.github.io
+├── about
+├── assets
+├── _data
+├── _includes
+├── _layouts
+├── myblog
+├── posts
+├── _posts
+├── projects
+├── _sass
+├── _site
+└── tags
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>在容器里，输入<code class="highlighter-rouge">jekyll serve</code> 或 <code class="highlighter-rouge">bundle exec jekyll serve</code>， 可能要解决依赖项问题 <code class="highlighter-rouge">gem install ...</code><br />
+浏览器访问http://localhost:4000 ， 效果如下
+<img src="blog_pics/pic2.png" alt="" />
+后续配置参考 https://taylantatli.github.io/Moon/moon-theme/ ，完成后用<code class="highlighter-rouge">jekyll serve</code> 或 <code class="highlighter-rouge">bundle exec jekyll serve</code>重新生成页面，本地确认后push到github上就可以了。</p>
+
+<h2 id="相关资料">相关资料</h2>
+<p><a href="https://www.ezlippi.com/blog/2015/03/github-pages-blog.html">利用github-pages建立个人博客</a>  非常好 <br />
+<a href="https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B">博客搭建详细教程</a>
+ 很详细，但没有使用jekyll框架，它是基于成品修改的，不够个性化<br />
+<a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">阮一峰的网络日志</a> 推荐看一下</p>
+
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/06/30/dreamer/" data-toggle="tooltip" data-placement="top" title="程序员中的梦想家">
+                        Previous<br>
+                        <span>程序员中的梦想家</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/07/26/farewell-flash/" data-toggle="tooltip" data-placement="top" title="Farewell, Flash. 感谢你，但这一次是真正的永别。">
+                        Next<br>
+                        <span>Farewell, Flash. 感谢你，但这一次是真正的永别。</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+        
+        
+        </a>
+        
+        
+                <a data-sort="0004" 
+                    href="/archive/?tag=Web"
+                    title="Web"
+                    rel="2">Web</a>
+        
+                <a data-sort="0004" 
+                    href="/archive/?tag=%E7%9F%A5%E4%B9%8E"
+                    title="知乎"
+                    rel="2">知乎</a>
+        
+                <a data-sort="0004" 
+                    href="/archive/?tag=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6"
+                    title="计算机科学"
+                    rel="2">计算机科学</a>
+        
+                <a data-sort="0004" 
+                    href="/archive/?tag=%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA"
+                    title="计算理论"
+                    rel="2">计算理论
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+<hr>
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+  
+  <li><a href="https://blog.sengxian.com">Sengxian</a></li>
+  
+</ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/jiangzc">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; JZC Blog 2019
+                    <br>
+                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+
+
+<!-- Multi-Lingual -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
