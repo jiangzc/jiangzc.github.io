@@ -7,35 +7,33 @@
     <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="description" content="关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
-    <meta name="keywords"  content="黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计">
+    <meta name="keywords"  content="JZC, JZC的博客, JZC Blog, 博客, 个人网站, 互联网, Web">
     <meta name="theme-color" content="#000000">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="程序员中的梦想家 - JZC的博客 | JZC Blog">
+    <meta property="og:title" content="Ubuntu 18.04 配置指南 - JZC的博客 | JZC Blog">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="
-  本文首发于我的知乎专栏 The Little Programmer，转载请保留链接 ;)
-
+    <meta property="og:description" content="Ubuntu 18.04 配置指南(1)
 
 ">
     
-    <meta property="article:published_time" content="2018-06-30T00:00:00Z">
+    <meta property="article:published_time" content="2018-08-01T00:00:00Z">
     
     
-    <meta property="article:author" content="Hux">
+    <meta property="article:author" content="JZC">
     
     
-    <meta property="article:tag" content="Facebook">
+    <meta property="article:tag" content="Ubuntu">
     
-    <meta property="article:tag" content="生活">
+    <meta property="article:tag" content="配置">
     
     
     <meta property="og:image" content="http://localhost:4000/img/avatar-hux-ny.jpg">
-    <meta property="og:url" content="http://localhost:4000/2018/06/30/dreamer/">
+    <meta property="og:url" content="http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/">
     <meta property="og:site_name" content="JZC的博客 | JZC Blog">
     
-    <title>程序员中的梦想家 - JZC的博客 | JZC Blog</title>
+    <title>Ubuntu 18.04 配置指南 - JZC的博客 | JZC Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -44,7 +42,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2018/06/30/dreamer/">
+    <link rel="canonical" href="http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -194,13 +192,6 @@
     }
 
     
-    header.intro-header .header-mask{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0,0,0, 0.4);
-    }
-    
 </style>
 
 <header class="intro-header" >
@@ -213,15 +204,15 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=Facebook" title="Facebook">Facebook</a>
+                        <a class="tag" href="/archive/?tag=Ubuntu" title="Ubuntu">Ubuntu</a>
                         
-                        <a class="tag" href="/archive/?tag=%E7%94%9F%E6%B4%BB" title="生活">生活</a>
+                        <a class="tag" href="/archive/?tag=%E9%85%8D%E7%BD%AE" title="配置">配置</a>
                         
                     </div>
-                    <h1>程序员中的梦想家</h1>
+                    <h1>Ubuntu 18.04 配置指南</h1>
                     
-                    <h2 class="subheading">Dreamers among programmers</h2>
-                    <span class="meta">Posted by Hux on June 30, 2018</span>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">Posted by JZC on August 1, 2018</span>
                 </div>
             </div>
         </div>
@@ -248,48 +239,157 @@
                 <!-- Multi-Lingual -->
                 
 
-				<blockquote>
-  <p>本文首发于我的知乎专栏 <a href="https://zhuanlan.zhihu.com/p/38722466">The Little Programmer</a>，转载请保留链接 ;)</p>
+				<h1 id="ubuntu-1804-配置指南1">Ubuntu 18.04 配置指南(1)</h1>
+
+<p>这几天都在折腾Ubuntu，积累了一些经验，想把它记录下来分享给大家。主要包括我在使用过程中遇到的问题和解决方法，配置系统、桌面环境，还有各种界面美化、插件安装等等。<br />
+本以为 Ubuntu18.04 会修复很多图形界面的BUG和设计失误，然而并没有，用了几天感觉很失望。各种小问题不断出现，极度影响用户体验。（绝大部分都是GUI的问题）<br />
+下面开始进入正题～～  （本文持续更新）</p>
+<h2 id="安装过程">安装过程</h2>
+<p>由于显卡驱动等问题，可能无法进入Ubuntu安装界面。<br />
+在Install Ubuntu 界面时  按“e”建进入编辑，修改倒数第二行：<br />
+将<br />
+<code class="highlighter-rouge">quite splash --- </code><br />
+改为<br />
+<code class="highlighter-rouge">quite splash nomodeset</code></p>
+
+<p>nomodeset的作用</p>
+
+<blockquote>
+  <p>The newest kernels have moved the video mode setting into the kernel. So all the programming of the hardware specific clock rates and registers on the video card happen in the kernel rather than in the X driver when the X server starts.. This makes it possible to have high resolution nice looking splash (boot) screens and flicker free transitions from boot splash to login screen. Unfortunately, on some cards this doesnt work properly and you end up with a black screen. Adding the nomodeset parameter instructs the kernel to not load video drivers and use BIOS modes instead until X is loaded.<br />
+翻译<br />
+最新的内核已经把视频模式设置嵌入内核中，所以所有显卡硬件程序的指定时钟和寄存器当图形服务器启动时在内核进行而不是图形设备运行，这使得我们在启动时可以看到不闪的和高分辨率的好看的启动界面，但是，在某些视频卡它不能正常工作而现实黑屏，增加nomodeset参数则告诉内核不要加载显卡而用BIOS模式直到图形界面运行</p>
 </blockquote>
 
-<p>有一类程序员是 visionary 型的，为了实现一些超前的 idea，绕过某些技术的限制，他们写的 code 晦涩高深得只有他们自己能懂，做出来的 tool 看上去很美好结果处处是坑出了 bug 根本没法查，但正是这类人不断创造出新的东西，在洗礼之后成为一个个 big thing。</p>
+<h2 id="配置ubuntu系统">配置Ubuntu系统</h2>
 
-<p>我每周都要被 infra 的坑 block 得无法工作几次搞得非常沮丧，后来我发现这个锅除了要扔给 FB 外，还有一大半要扔给我周围这群 visionary 的同事们，我工作直接需要接触到的区区五六个人，发起/创造了 Infer, React, Reason, ReasonReact, BuckleScript…</p>
+<h3 id="添加源">添加源</h3>
+<p><strong>什么是软件源?</strong><br />
+源,在Ubuntu下,它相当于软件库,需要什么软件,只要记得正确的软件名就可以用命令安装</p>
 
-<p>所以这大概就是见证/参与这些 idea 成长的代价吧，也意识到这些东西不是在刚开始就像后来大家接受流行时那么美好的。React 发布 5 周年生日时回放 Jordan/Tom 2013 年第一次对外发布 React/JSX 的视频。我问 Jordan 说你后来怎么没再去分享了。他说你不知道我那天讲完下来被所有听众指着批评。React 第一次在内部使用是 2011 年在 news feed，然后是 2012 年 instagram (pete hunt)，所以这个时间其实很长很长。</p>
+<p><strong>软件源的分类</strong><br />
+在 Ubuntu 中软件源其实还细分为下面两种：</p>
+<ul>
+  <li>Ubuntu 官方软件源</li>
+  <li>PPA 软件源  <br />
+Ubuntu 官方软件源:
+Ubuntu 官方软件源中包含了 Ubuntu 系统中所用到的绝大部分的软件，它对应的源列表是 /etc/apt/sources.list。只需要修改这个文件，就能添加我们想要的源。</li>
+</ul>
 
-<p>很多人（包括我）都会经常觉得 XYZ 新事物跟老东西比太新、太不成熟、体验太不好、想要解决的问题太多、解决方案太 overkill、然后就没有然后了，但其实说不定你在看的这个就是 next big thing 呢。这些梦想家们 vision 里的 big picture 太大了，有的人可能在半个 picture 出来的时候就可以看出来了，有的人则可能要等到整个 picture 都快填满了才看得出来。</p>
+<p><strong>一定要添加中科大的源！！！</strong>推荐再加一个国内的源，比如阿里、网易、清华</p>
+<blockquote>
+  <p>参考资料 https://www.jianshu.com/p/57a91bc0c594</p>
+</blockquote>
 
-<p>如果不是因为 Ads/Messenger 的坑深 React/Reason/Flux 也就不会在这里诞生了，</p>
+<h3 id="sudo-免密码">sudo 免密码</h3>
+<p>在配置环境时，每次安装软件都要输密码感觉很麻烦，所以暂时取消sudo密码<br />
+<code class="highlighter-rouge">$ sudo visudo</code><br />
+最后一行添加 <code class="highlighter-rouge">jzc    ALL=(ALL:ALL)NOPASSWD: ALL</code></p>
 
-<p>如果不是因为 Facebook 的坑深 GraphQL/Infer/Hack/Flow/Buck 也就不会在这里诞生了。</p>
+<h3 id="双击sh行为设置">双击*.sh行为设置</h3>
+<p>为了安全，系统默认的方式是：双击*.sh开启编辑模式。但这样很不方便，如果要运行shell脚本，只能在终端里输入命令，右键菜单是找不到运行的。<br />
+解决方法：<br />
+任意文件夹下，菜单中选择Edit-&gt;Preference-&gt;Behavior选项卡，可以看到默认为View executable text files when they are opened。把其选择为Ask each time，之后每次鼠标点击，可以让用户选择以何种方式响应双击事件。</p>
 
-<p>正是有一群开垦者不怕坑深才使得各种 idea 成为了大家手上好用的 tool 啊。</p>
+<h3 id="grub-设置">grub 设置</h3>
+<ol>
+  <li>
+    <p>解决关机卡死的问题<br />
+<code class="highlighter-rouge">sudo vi /etc/default/grub</code> <br />
+<code class="highlighter-rouge">GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"</code>   -&gt;  <code class="highlighter-rouge">""</code>  （删除引号中的内容）</p>
+  </li>
+  <li>
+    <p>修改等待时间<br />
+<code class="highlighter-rouge">GRUB_TIMEOUT=5</code></p>
+  </li>
+  <li>
+    <p>保存记住上次的启动项<br />
+<code class="highlighter-rouge">GRUB_DEFAULT=saved</code><br />
+<code class="highlighter-rouge">GRUB_SAVEDEFAULT=true</code></p>
+  </li>
+</ol>
 
-<p>梦想家程序员们的工作价值于实干主义的程序员，总是很容易在过程中被低估、忽视，或是得不到尊重。而又在流行之后被神化，仿佛是那个人早已洞察一切一样。其实梦想家的工作，也是一点点累加，一点点迭代起来的。他们也需要伯乐和追随者的支持和帮助。</p>
+<h3 id="编辑器的首选项">编辑器的首选项</h3>
+<p><strong>设置终端的默认编辑器</strong><br />
+<code class="highlighter-rouge">update-alternatives --config editor </code><br />
+<strong>gedit 配置</strong> <br />
+打开gedit，在左上角Activities的右边找到gedit，右键，选择Preference</p>
 
-<p>Chenglou 这个人总是在巨兴奋与巨沮丧之间切换，这段时间下来，我开始能感受这种情绪的来源了。</p>
+<h2 id="软件设置">软件设置</h2>
 
-<p>他总是用一句话来总结他回答我的吐槽、抱怨、疑问、惊叹，我就用这句话来结尾好了：</p>
+<h3 id="安装输入法-input-method">安装输入法 Input Method</h3>
+<ol>
+  <li>安装fcitx</li>
+  <li>设置，Language Support -&gt; Keyboard input method system -&gt; fcitx</li>
+  <li>上网搜索 搜狗输入法 for Linux 下载安装</li>
+  <li>重启</li>
+  <li>gnome右上角Keyboard -&gt; Configure 添加 Sougou</li>
+</ol>
 
-<p><strong>“Welcome to the producer side!”</strong></p>
+<h3 id="科学上网">科学上网</h3>
+<p><strong>安装Chrome 同时保留 Firefox(很重要！！！！)</strong></p>
+
+<p>Firefox不能翻墙问题</p>
+<blockquote>
+  <p>Please also try setting network.proxy.socks_remote_dns to true in about:config. You can get a list of SOCKS proxies from samair. You may have to restart Firefox and also Clear Now the Cache and Cookies in Tools (Alt + T) &gt; Clear Recent History.</p>
+</blockquote>
+
+<p>下载chrome for linux 安装包，离线安装<br />
+pip安装ss 客户端配置格式如下(和服务器保持一致)</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="p">{</span><span class="w"> 
+</span><span class="s2">"server"</span><span class="p">:</span><span class="s2">"server_ip"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"server_port"</span><span class="p">:</span><span class="mi">30696</span><span class="p">,</span><span class="w">
+</span><span class="s2">"local_port"</span><span class="p">:</span><span class="mi">1080</span><span class="p">,</span><span class="w">
+</span><span class="s2">"password"</span><span class="p">:</span><span class="s2">"password"</span><span class="p">,</span><span class="w">
+</span><span class="s2">"timeout"</span><span class="p">:</span><span class="mi">600</span><span class="p">,</span><span class="w">
+</span><span class="s2">"method"</span><span class="p">:</span><span class="s2">"rc4-md5"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>启动  sslocal -c /home/usr/ss.json<br />
+添加开机自启</p>
+
+<p>kcptun 的安装及其配置<br />
+略</p>
+
+<h3 id="git">Git</h3>
+<ol>
+  <li>
+    <p>安装git<br />
+<code class="highlighter-rouge">sudo apt install git</code></p>
+  </li>
+  <li>配置用户信息
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>ubuntu:~$ git config --global user.name "Your Name Here"
+ubuntu:~$ git config --global user.email "youremail@address.here"
+</pre></td></tr></tbody></table></code></pre></div>    </div>
+  </li>
+  <li>
+    <p>创建秘钥文件<br />
+<code class="highlighter-rouge">ssh-keygen -t rsa -C "你的github账号邮箱"</code><br />
+默认密钥文件路径在~/.ssh，id_rsa是私钥文件，id_rsa.pub是公钥文件</p>
+  </li>
+  <li>将公钥添加到Github<br />
+将id_rsa.pub文件内容全部复制<br />
+登陆到GitHub上，右上角小头像-&gt;Setting-&gt;SSH and GPG keys中，点击new SSH key</li>
+</ol>
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2017/12/12/uncomputable-funcs/" data-toggle="tooltip" data-placement="top" title="「知乎」如何证明不可计算的函数比可计算的函数多？">
-                        Previous<br>
-                        <span>「知乎」如何证明不可计算的函数比可计算的函数多？</span>
-                        </a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2019/04/22/blog/" data-toggle="tooltip" data-placement="top" title="Github博客搭建指南（JEKYLL框架）">
+                        <a href="/2019/04/22/Web%E5%88%86%E4%BA%AB/" data-toggle="tooltip" data-placement="top" title="Web介绍">
                         Next<br>
-                        <span>Github博客搭建指南（JEKYLL框架）</span>
+                        <span>Web介绍</span>
                         </a>
                     </li>
                     
@@ -323,28 +423,8 @@
         
         
         
-        </a>
         
         
-                <a data-sort="0004" 
-                    href="/archive/?tag=Web"
-                    title="Web"
-                    rel="2">Web</a>
-        
-                <a data-sort="0004" 
-                    href="/archive/?tag=%E7%9F%A5%E4%B9%8E"
-                    title="知乎"
-                    rel="2">知乎</a>
-        
-                <a data-sort="0004" 
-                    href="/archive/?tag=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6"
-                    title="计算机科学"
-                    rel="2">计算机科学</a>
-        
-                <a data-sort="0004" 
-                    href="/archive/?tag=%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA"
-                    title="计算理论"
-                    rel="2">计算理论
     </div>
 </section>
 

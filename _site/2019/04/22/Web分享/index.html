@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="关于程序与设计、黑客与画家 | 黄玄，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。">
+    <meta name="keywords"  content="JZC, JZC的博客, JZC Blog, 博客, 个人网站, 互联网, Web">
+    <meta name="theme-color" content="#000000">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Web介绍 - JZC的博客 | JZC Blog">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="目录：
+
+  Web资源 — URI URL URN 资源传输
+  API — 原因 应用 操作资源
+  网络 因特网 互联网 万维网
+
+
+Web资源
+早期 Web资源：在网络中有地址的静态文件
+现在 Web资源：可以被识别、被命名、或被处理的任何实体
+资源的形式多种多样，文档、图片、音乐、电影、数据库、网页、服务都可以算作是资源
+互联网上这么多资源，怎么区分，怎么找到我想要的资源呢？这就需...">
+    
+    <meta property="article:published_time" content="2019-04-22T00:00:00Z">
+    
+    
+    <meta property="article:author" content="JZC">
+    
+    
+    <meta property="article:tag" content="Web">
+    
+    
+    <meta property="og:image" content="http://localhost:4000/img/avatar-hux-ny.jpg">
+    <meta property="og:url" content="http://localhost:4000/2019/04/22/Web%E5%88%86%E4%BA%AB/">
+    <meta property="og:site_name" content="JZC的博客 | JZC Blog">
+    
+    <title>Web介绍 - JZC的博客 | JZC Blog</title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://localhost:4000/2019/04/22/Web%E5%88%86%E4%BA%AB/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">JZC Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li>
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="/archive/">Archive</a>
+                    </li>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    var __HuxNav__ = {
+        close: function(){
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        },
+        open: function(){
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+
+    // Bind Event
+    $toggle.addEventListener('click', function(e){
+        if ($navbar.className.indexOf('in') > 0) {
+            __HuxNav__.close()
+        }else{
+            __HuxNav__.open()
+        }
+    })
+
+    /**
+     * Since Fastclick is used to delegate 'touchstart' globally
+     * to hack 300ms delay in iOS by performing a fake 'click',
+     * Using 'e.stopPropagation' to stop 'touchstart' event from 
+     * $toggle/$collapse will break global delegation.
+     * 
+     * Instead, we use a 'e.target' filter to prevent handler
+     * added to document close HuxNav.  
+     *
+     * Also, we use 'click' instead of 'touchstart' as compromise
+     */
+    document.addEventListener('click', function(e){
+        if(e.target == $toggle) return;
+        if(e.target.className == 'icon-bar') return;
+        __HuxNav__.close();
+    })
+</script>
+
+
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/home-bg.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
+
+
+
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/home-bg.jpg');
+        background: ;
+    }
+
+    
+</style>
+
+<header class="intro-header" >
+
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=Web" title="Web">Web</a>
+                        
+                    </div>
+                    <h1>Web介绍</h1>
+                    
+                    <h2 class="subheading"></h2>
+                    <span class="meta">Posted by JZC on April 22, 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
+                
+
+				<p>目录：</p>
+<ul>
+  <li>Web资源 — URI URL URN 资源传输</li>
+  <li>API — 原因 应用 操作资源</li>
+  <li>网络 因特网 互联网 万维网</li>
+</ul>
+
+<h2 id="web资源">Web资源</h2>
+<p>早期 Web资源：在网络中有地址的静态文件<br />
+现在 Web资源：可以被识别、被命名、或被处理的任何实体<br />
+资源的形式多种多样，文档、图片、音乐、电影、数据库、网页、服务都可以算作是资源<br />
+互联网上这么多资源，怎么区分，怎么找到我想要的资源呢？这就需要用到URI(统一资源标志符)</p>
+
+<h3 id="uri-统一资源标志符">URI 统一资源标志符</h3>
+<p>URI是一个用于标识某一互联网资源名称的字符串。每个资源的URI是独一无二的，这样才能把它们区分开。<br />
+例如：</p>
+<ol>
+  <li>http://www.w3school.com.cn/tags/index.asp 代表W3school网站上的一份参考手册</li>
+  <li>sftp://67.216.199.87:26894/ 代表我VPS上的ssh服务</li>
+  <li>thunder://QUFlZDJrOi8vfGZpbGV8JTVCJUU4JUJGJTg1JUU5rOi8vfGZpb…… 代表迅雷服务器上的一部电影</li>
+  <li>magnet:?xt=urn:btih:AC55FAEAE28DD449F19130961DA3646E7ABA324D 磁力链接，代表一个资源</li>
+</ol>
+
+<h3 id="url-urn-与-uri">URL URN 与 URI</h3>
+<p>URL是统一资源定位符，对可以从互联网上得到的资源的位置和访问方法的一种简洁的表示，是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的URL，它包含的信息指出文件的位置以及浏览器应该怎么处理它。</p>
+
+<p>URN是统一资源名称。可以表示唯一的资源，但是不能给出实体的位置。系统可以先在本地寻找一个实体，在它试着在Web上找到该实体之前。它也允许Web位置改变，然而这个实体却还是能够被找到。</p>
+
+<p>URI包括URL和URN。上面例子中的(1)(2)是URL，因为其中有路径可以确定资源的位置，这样才能找到它。上面例子中的(3)(4)是URN，因为它带有文件的特征码，表示了文件独一无二的身份。</p>
+
+<p>下面引用知乎的回答进一步解释这些概念<br />
+<a href="https://www.zhihu.com/question/21950864">HTTP 协议中 URI 和 URL 有什么区别？</a></p>
+
+<h3 id="web资源的传输">Web资源的传输</h3>
+<p>在了解Web资源的概念之后，我们知道了URI可以区分不同的资源，根据URI我们就可以找到指定的资源。但还有一个问题，这些Web资源储存在服务器上，它们是怎么传输到我们的电脑上呢？换句话说，当我们请求一个资源时，真实的物理世界发生了哪些事？我们想知道信息是如何传递的？它经过了哪些线路？<br />
+<a href="https://www.youtube.com/watch?v=ewrBalT_eBM&amp;t=72s">How Does the Internet Work?</a></p>
+
+<h2 id="api">API</h2>
+<p>API（Application Programming Interface,应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。API本身是抽象的，它仅定义了一个接口，而不涉及应用程序在实际实现过程中的具体操作。<br />
+从形式的角度看：<br />
+API像函数声明一样，指定了参数和返回结果，负责一个程序和其他软件的沟通，本质是预先定义的函数。<br />
+从设计的角度看：<br />
+把某些功能封装好，方便其他人调用。调用的人可以很方便使用这些功能，并且可以不需要知道这些功能的具体实现过程。</p>
+
+<h3 id="为什么使用api">为什么使用API</h3>
+<p>程序之间是互相联系的，它们彼此依赖，需要协调配合等才能完成任务。API的目的就是把这种通讯方式事先约定好，当请求方调用API时，接收方负责实现具体过程。这么一来，请求方只需调用API，不用知道具体操作就能完成任务。</p>
+
+<h3 id="api的应用">API的应用</h3>
+<p>下面看一些具体的应用情景</p>
+<ol>
+  <li>
+    <p>操作系统API<br />
+比如你想做一个单机游戏的修改器，修改玩家的生命值。尽管你知道游戏中生命值对应的内存地址，但是修改器和游戏是两个不同的进程，你不能直接修改这个内存。怎么办？我们知道操作系统可以管理计算机硬件与软件资源，它是有权限修改内存的。所以就我们请求操作系统修改内存，这就需要调用操作系统的API。<br />
+操作系统留给应用程序的一个调用接口，应用程序通过调用操作系统的API而使操作系统去执行应用程序的命令。</p>
+  </li>
+  <li>
+    <p>多媒体API<br />
+DirectX是由微软公司创建的多媒体编程接口。由C++编程语言实现，遵循COM。被广泛使用于Microsoft Windows、Microsoft XBOX、Microsoft XBOX 360和Microsoft XBOX ONE电子游戏开发，并且只能支持这些平台。最新版本为DirectX 12，创建在最新的Windows10。<br />
+DirectX API 帮助游戏开发者设计炫酷的画面，而不必在意显卡是如何工作的。</p>
+  </li>
+  <li>
+    <p>Web API<br />
+什么是Web API呢？<br />
+如果我们想要获取一篇Blog，输入http://localhost:9000/blog/123 ，就可以看到id为123的Blog页面，但这个结果是HTML页面，它同时混合包含了Blog的数据和Blog的展示两个部分。对于用户来说，阅读起来没有问题，但是，如果机器读取，就很难从HTML中解析出Blog的数据。<br />
+如果一个URL返回的不是HTML，而是机器能直接解析的数据，这个URL就可以看成是一个Web API。比如，读取http://localhost:9000/api/blogs/123 ，如果能直接返回Blog的数据，那么机器就可以直接读取。<br />
+REST就是一种设计API的模式。最常用的数据格式是JSON。由于JSON能直接被JavaScript读取，所以，以JSON格式编写的REST风格的API具有简单、易读、易用的特点。 <br />
+编写API有什么好处呢？<br />
+由于API就是把Web App的功能全部封装了，所以，通过API操作数据，可以极大地把前端和后端的代码隔离，使得后端代码易于测试，前端代码编写更简单。</p>
+  </li>
+</ol>
+
+<h3 id="web中的api与资源">Web中的API与资源</h3>
+<p>服务器上储存了很多各种各样的资源，其中一部分是对外开放的。如果用户随意的读取、修改、删除资源，这就很危险了。所以，对于外部的请求，我们总是使用API来操作服务器上的数据。使用API好处很多，第一：对请求做出了限制，保证了服务器数据的安全。第二：制定了一套规范，便于开发。<br />
+下面举一些例子来说明API是如何操作资源的。</p>
+
+<p>V2EX是一个知名技术创意网站，由设计师、程序员及有创意的人参与的社区。它基于兴趣将用户创建的内容组织分类成不同“节点”，网站以内容的活跃程度决定在首页排序的位置。<br />
+我们来看看这个网站的API <a href="https://github.com/djyde/V2EX-API">V2EX API</a></p>
+<blockquote>
+  <p>实验：用POSTMAN发出API请求，测试结果</p>
+</blockquote>
+
+<p>推荐视频 <a href="https://www.youtube.com/watch?v=s7wmiS2mSXY">What is an API</a></p>
+
+<h2 id="关于网络补充">关于网络（补充）</h2>
+<p>上面谈到的大部分内容都和Web有关。那么，Web到底是什么？  为了弄清楚这个问题，我们先要搞懂下面这些关键词。<br />
+关键词：</p>
+<ol>
+  <li>互联网(internet;internetwork;internection network)</li>
+  <li>因特网(Internet)</li>
+  <li>万维网(WWW;world wide web;Web)</li>
+  <li>HTTP(HyperText Transfer Protocol)</li>
+  <li>HTML(HyperText Markup Language)</li>
+</ol>
+
+<p>网络：由若干结点和连接这些结点的链路组成。<br />
+互联网：是网络的网络，是所有类型网络的母集。<br />
+因特网：世界上最大的互联网网络。即 因特网概念从属于互联网概念。习惯上，大家把连接在因特网上的计算机都称为主机。<br />
+万维网：万维网是一个大规模的、联机式的信息贮藏所，英文简称web。 特点是基于HTTP、HTML技术。简单理解是与“浏览网页”相关的网络系统。</p>
+
+<p>Web（World Wide Web）即全球广域网，也称为万维网，它是一种基于超文本和HTTP的、全球性的、动态交互的、跨平台的分布式图形信息系统。是建立在Internet上的一种网络服务，为浏览者在Internet上查找和浏览信息提供了图形化的、易于访问的直观界面，其中的文档及超级链接将Internet上的信息节点组织成一个互为关联的网状结构。<br />
+万维网用链接的方法能非常方便地从因特网上的一个站点访问另一个站点（超链技术），具有提供分布式服务的特点。万维网是一个分布式的超媒体系统，是超文本系统的扩充。万维网基于B/S架构工作。   <br />
+<a href="https://baike.baidu.com/item/Web/150564#2">Web 万维网</a></p>
+
+<p>HTTP：为解决“用什么样的协议来实现整个因特网上的万维网文档”这一难题，就要使万维网客户程序（以浏览器为主，但不限于浏览器）与万维网服务器程序之间的交互遵守严格的协议，这就是超文本传送协议（HyperText Transfer Protocol）。HTTP是处于应用层的协议，使用TCP传输层协议进行可靠的传送。因此，需要特别提醒的是，万维网是基于因特网的一种广泛因特网应用系统，且万维网采用的是HTTP（端口：80）/HTTPS（端口：43）的传输协议，但因特网还有其他的网络应用系统（如：FTP、SMTP等等）。</p>
+
+<p>HTML：为了解决“怎样使不同作者创作的不同风格的万维网文档，都能在因特网上的各种主机上显示出来，同时使用户清楚地知道在什么地方存在着链接”这一问题，万维网使用超文本标记语言（HyperText Markup Language），使得万维网页面的设计者可以很方便地用链接从页面的某处链接到因特网的任何一个万维网页面，并且能够在自己的主机品目上将这些页面显示出来。HTML与txt一样，仅仅是是一种文档，不同之处在于，这种文档专供于浏览器上为浏览器用户提供统一的界面呈现的统一规约。且具备结构化的特征，这是txt所不具备的强制规定。</p>
+
+<h2 id="部分参考资料">部分参考资料</h2>
+<p>https://en.wikipedia.org/wiki/Web_resource<br />
+https://www.zhihu.com/question/21950864<br />
+https://baike.baidu.com/item/url/110640?fr=aladdin<br />
+https://baike.baidu.com/item/URN<br />
+https://www.zhihu.com/question/38594466<br />
+https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8E%A5%E5%8F%A3<br />
+https://www.youtube.com/watch?v=s7wmiS2mSXY<br />
+https://www.zhihu.com/question/19860216<br />
+https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001402402473485d8c205b735ee4e698f90769960fcec4b000<br />
+https://www.zhihu.com/question/58274241<br />
+https://github.com/djyde/V2EX-API<br />
+https://www.douban.com/note/323728072/<br />
+https://baike.baidu.com/item/Web/150564<br />
+https://www.zhihu.com/question/19860216<br />
+https://www.zhihu.com/question/20597473</p>
+
+
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/" data-toggle="tooltip" data-placement="top" title="Ubuntu 18.04 配置指南">
+                        Previous<br>
+                        <span>Ubuntu 18.04 配置指南</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2019/04/22/blog/" data-toggle="tooltip" data-placement="top" title="Github博客搭建指南（JEKYLL框架）">
+                        Next<br>
+                        <span>Github博客搭建指南（JEKYLL框架）</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
+
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+
+    <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+
+<section>
+    
+        <hr class="hidden-sm hidden-xs">
+    
+    <h5><a href="/archive/">FEATURED TAGS</a></h5>
+    <div class="tags">
+        
+        
+        
+        
+        
+    </div>
+</section>
+
+
+                <!-- Friends Blog -->
+                
+<hr>
+<h5>FRIENDS</h5>
+<ul class="list-inline">
+  
+  <li><a href="https://blog.sengxian.com">Sengxian</a></li>
+  
+</ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'always',
+          placement: 'right',
+          icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  
+  
+  
+  <li>
+    <a target="_blank" href="https://github.com/jiangzc">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+      </span>
+    </a>
+  </li>
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; JZC Blog 2019
+                    <br>
+                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Service Worker -->
+
+<script src="/js/snackbar.js "></script>
+<script src="/js/sw-registration.js "></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-49627206-1';
+    var _gaDomain = 'huangxuan.me';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+
+
+<!-- Multi-Lingual -->
+
+
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

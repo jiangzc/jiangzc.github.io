@@ -5,97 +5,9 @@
     <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Apr 2019 11:55:44 +0000</pubDate>
-    <lastBuildDate>Mon, 22 Apr 2019 11:55:44 +0000</lastBuildDate>
+    <pubDate>Mon, 22 Apr 2019 12:30:00 +0000</pubDate>
+    <lastBuildDate>Mon, 22 Apr 2019 12:30:00 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
-    
-      <item>
-        <title>Farewell, Flash. 感谢你，但这一次是真正的永别。</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;本文首发于我的知乎专栏 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/28109200&quot;&gt;The Little Programmer&lt;/a&gt;，转载请保留链接 ;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;一年半前，我曾和 Flash 作过一次告别。那一次，Adobe Flash Professional CC 被重新命名为了 Adobe Animate CC，宣告着 Flash 作为一个创作工具走到了尽头。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/img/in-post/post-f-f-weibo.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;而今天，通过 Chromium 博客 &lt;a href=&quot;https://blog.chromium.org/2017/07/so-long-and-thanks-for-all-flash.html&quot;&gt;So long, and thanks for all the Flash&lt;/a&gt; 我才得知，Adobe 官博在 &lt;a href=&quot;https://blogs.adobe.com/conversations/2017/07/adobe-flash-update.html&quot;&gt;Flash &amp;amp; The Future of Interactive Content&lt;/a&gt; 一文中，宣布将在 2020 年底时停止发布与更新 Flash Player。这一次，意味着 Flash 作为一个平台走到了尽头。&lt;/p&gt;
-
-&lt;p&gt;在不少人眼里，Flash 与 HTML5 是纯粹的竞争关系，我们应该为 HTML5 与 Open Web 标准的胜利欢呼，而将 Flash 狠狠的咒骂在黄泉之下。但其实，大多数人都忘记了，或是从不曾知道：&lt;strong&gt;HTML5（严谨的来说，其 marketing 含义中所涵盖的那些 Web APIs），有很大一部分正是 Flash 平台、Flash 社区对 web 标准做出的贡献。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;正如 &lt;a href=&quot;https://blogs.adobe.com/conversations/2017/07/adobe-flash-update.html&quot;&gt;Flash &amp;amp; The Future of Interactive Content&lt;/a&gt; 所说：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Adobe has long played a leadership role in advancing interactivity and creative content – from video, to games and more – on the web. Where we’ve seen a need to push content and interactivity forward, we’ve innovated to meet those needs. &lt;strong&gt;Where a format didn’t exist, we invented one – such as with Flash and Shockwave. And over time, as the web evolved, these new formats were adopted by the community, in some cases formed the basis for open standards, and became an essential part of the web.&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;当我们（企业、用户）需要 web 平台承载包括视频、游戏在内的各种富交互内容而 web 平台本身还不具备这样的能力时，我们通过给予这个平台一种新的格式，以满足大家的需求，这就是 Flash Player，作为一种私有平台与浏览器插件，却能一度成为 web 事实标准的客观原因。&lt;/p&gt;
-
-&lt;p&gt;而时至今日，这些 web 平台所欠缺的能力，在得到市场与社区的认可之后，逐渐被从 Flash 中吸收与扬弃，成为了诸如 HTML5 Video/Audio/Canvas、WebGL 这些真正的 Open Web 标准。这时候，这些在诞生之初颇为创新的，作为了一种「过渡手段」、「Shim」的私有平台，便自然而然的，慢慢的不再被需要了。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;这并不应该理解为一种失败，而应该说，它们「功成身退」了。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;ActionScript 3.0，Flash 中的御用编程语言，作为 ES4 的唯一实现，&lt;a href=&quot;https://www.zhihu.com/question/49170215/answer/114640341&quot;&gt;推动了 ECMAScript 标准的发展，深远得影响着现代 JavaScript&lt;/a&gt;；&lt;/p&gt;
-
-&lt;p&gt;Adobe Flex，Flash 平台的企业开发框架，在今年和 &lt;a href=&quot;https://www.zhihu.com/people/sharpmaster&quot;&gt;@徐飞&lt;/a&gt; 老师聊到时，还一起怀念并认可其相比现代 web 前端/客户端开发在工具链、协作、兼容性、UI 组件等方面的先进与成熟；
-Adobe AIR，作为最早借鉴 JRT 将 web 相关技术的 Runtime 植入操作系统或捆绑在可执行文件内的跨平台开发方案，或许可以视作 Cordova、Electron、NodeWebkit、ReactNative 这些方案的一个前身与成功先例；&lt;/p&gt;
-
-&lt;p&gt;Microsoft IE 私有技术 ActiveX 中的 XMLHTTP，作为 XMLHTTPRequest 的前身，促进了 Ajax 的诞生与 Web 2.0 时代的来临；&lt;/p&gt;
-
-&lt;p&gt;Google Gears 作为 2008 年时为了增强 web 应用的浏览器插件，其私有 API 分别是 App Cache、Web Worker、WebSQL 等标准或标准未遂的前身；&lt;/p&gt;
-
-&lt;p&gt;Cordova/Phonegap 作为第一个面向移动端的 Hybrid 方案，成为了 web 开发与移动设备的 polyfill 与桥梁，加速了 Web 平台 Device APIs 的发展，并与 WebOS、FirefoxOS、Chrome Apps、Windows Runtime Apps 等一同影响了 Progressive Web App 的出现；&lt;/p&gt;
-
-&lt;p&gt;Google Extension 中 Background Page 与 Event Page 多年对 web 平台后台持续计算的尝试，直接帮助了 Service Worker 的 API 设计；&lt;/p&gt;
-
-&lt;p&gt;Google 的 NativeClient、Mozilla 的 asm.js 对于 web 追逐 native 性能的极致追求，则奠定了 Web Assembly 的诞生……&lt;/p&gt;
-
-&lt;p&gt;你看，在这条道路上，Flash 与它的朋友们，其实并不孤单。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;「看到你长大了，我也就可以心满意足的离开了。」&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;就像是， web 技术发展的必然规律一样，&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;而 Open Web 则因此不朽。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;我很高兴，Google Chrome、Mozilla Firefox、Microsoft Edge 都能这么写到：&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Flash helped make the web a rich, dynamic experience, and &lt;strong&gt;shaped the modern set of web standards.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;— “&lt;a href=&quot;https://blog.chromium.org/2017/07/so-long-and-thanks-for-all-flash.html&quot;&gt;So long, and thanks for all the Flash&lt;/a&gt;” Chromium Blog&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Over the years, Flash has helped bring the Web to greatness with innovations in media and animation, &lt;strong&gt;which ultimately have been added to the core web platform.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;— “&lt;a href=&quot;https://blog.mozilla.org/futurereleases/2017/07/25/firefox-roadmap-flash-end-life/&quot;&gt;Firefox Roadmap for Flash End-of-Life&lt;/a&gt;” Mozilla Blog&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Flash led the way on the web for rich content, gaming, animations, and media of all kinds, and &lt;strong&gt;inspired many of the current web standards powering HTML5.&lt;/strong&gt;&lt;/p&gt;
-
-  &lt;p&gt;— “&lt;a href=&quot;https://blogs.windows.com/msedgedev/2017/07/25/flash-on-windows-timeline/&quot;&gt;The End of an Era – Next Steps for Adobe Flash&lt;/a&gt;” Windows Blog&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;感谢你，Flash。&lt;/p&gt;
-
-&lt;p&gt;感谢你们，那些「功成身退」的你们。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 26 Jul 2019 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2019/07/26/farewell-flash/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/07/26/farewell-flash/</guid>
-        
-        <category>Web</category>
-        
-        <category>Flash</category>
-        
-        
-      </item>
     
       <item>
         <title>Github博客搭建指南（JEKYLL框架）</title>
@@ -271,331 +183,291 @@ jiangzc.github.io
       </item>
     
       <item>
-        <title>程序员中的梦想家</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;本文首发于我的知乎专栏 &lt;a href=&quot;https://zhuanlan.zhihu.com/p/38722466&quot;&gt;The Little Programmer&lt;/a&gt;，转载请保留链接 ;)&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;有一类程序员是 visionary 型的，为了实现一些超前的 idea，绕过某些技术的限制，他们写的 code 晦涩高深得只有他们自己能懂，做出来的 tool 看上去很美好结果处处是坑出了 bug 根本没法查，但正是这类人不断创造出新的东西，在洗礼之后成为一个个 big thing。&lt;/p&gt;
-
-&lt;p&gt;我每周都要被 infra 的坑 block 得无法工作几次搞得非常沮丧，后来我发现这个锅除了要扔给 FB 外，还有一大半要扔给我周围这群 visionary 的同事们，我工作直接需要接触到的区区五六个人，发起/创造了 Infer, React, Reason, ReasonReact, BuckleScript…&lt;/p&gt;
-
-&lt;p&gt;所以这大概就是见证/参与这些 idea 成长的代价吧，也意识到这些东西不是在刚开始就像后来大家接受流行时那么美好的。React 发布 5 周年生日时回放 Jordan/Tom 2013 年第一次对外发布 React/JSX 的视频。我问 Jordan 说你后来怎么没再去分享了。他说你不知道我那天讲完下来被所有听众指着批评。React 第一次在内部使用是 2011 年在 news feed，然后是 2012 年 instagram (pete hunt)，所以这个时间其实很长很长。&lt;/p&gt;
-
-&lt;p&gt;很多人（包括我）都会经常觉得 XYZ 新事物跟老东西比太新、太不成熟、体验太不好、想要解决的问题太多、解决方案太 overkill、然后就没有然后了，但其实说不定你在看的这个就是 next big thing 呢。这些梦想家们 vision 里的 big picture 太大了，有的人可能在半个 picture 出来的时候就可以看出来了，有的人则可能要等到整个 picture 都快填满了才看得出来。&lt;/p&gt;
-
-&lt;p&gt;如果不是因为 Ads/Messenger 的坑深 React/Reason/Flux 也就不会在这里诞生了，&lt;/p&gt;
-
-&lt;p&gt;如果不是因为 Facebook 的坑深 GraphQL/Infer/Hack/Flow/Buck 也就不会在这里诞生了。&lt;/p&gt;
-
-&lt;p&gt;正是有一群开垦者不怕坑深才使得各种 idea 成为了大家手上好用的 tool 啊。&lt;/p&gt;
-
-&lt;p&gt;梦想家程序员们的工作价值于实干主义的程序员，总是很容易在过程中被低估、忽视，或是得不到尊重。而又在流行之后被神化，仿佛是那个人早已洞察一切一样。其实梦想家的工作，也是一点点累加，一点点迭代起来的。他们也需要伯乐和追随者的支持和帮助。&lt;/p&gt;
-
-&lt;p&gt;Chenglou 这个人总是在巨兴奋与巨沮丧之间切换，这段时间下来，我开始能感受这种情绪的来源了。&lt;/p&gt;
-
-&lt;p&gt;他总是用一句话来总结他回答我的吐槽、抱怨、疑问、惊叹，我就用这句话来结尾好了：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;“Welcome to the producer side!”&lt;/strong&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2018/06/30/dreamer/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/06/30/dreamer/</guid>
-        
-        <category>Facebook</category>
-        
-        <category>生活</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>「知乎」如何证明不可计算的函数比可计算的函数多？</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/51508063/answer/275401076&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;严谨的证明的话，可以使用「形式语言」（&lt;a href=&quot;https://en.wikipedia.org/wiki/Formal_language&quot;&gt;Formal language&lt;/a&gt;）来证明：&lt;/p&gt;
-
-&lt;p&gt;在可计算理论和计算复杂度理论中，每个「计算问题」都被描述为一个一个「形式语言」，即字符串的集合。比如对于判断一个图是否是无向连通图这个问题：我们可以写为一个描述所有无向连通图的集合：&lt;/p&gt;
-
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;A = \{ \langle G \rangle \vert G \text{ is a connected undirected graph}\}&lt;/script&gt;
-
-&lt;p&gt;由于图灵机只能接受字符串，所以这里的尖括号表示对图的「编码」。出于简单，我们全部使用现实计算机所使用的字母表
-$\Sigma = \{0, 1\}$，所以「编码」即一个对象的二进制字符串描述。&lt;/p&gt;
-
-&lt;p&gt;如果我们能构造出一个图灵机来「决定」这个「形式语言」，即可以判断一个「输入」是否属于这个集合（membership 与 non-membership），那么我们可以说我们用「图灵机」描述了一个「算法」来计算这个问题，而这个「计算问题」所对应的函数是「可计算的」，否则是「不可计算的」。（注 1）&lt;/p&gt;
-
-&lt;p&gt;那么，如果我们有一个包含了所有「可计算函数」的集合，这个集合会有多大呢？&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;由于&lt;/p&gt;
-
+        <title>Web介绍</title>
+        <description>&lt;p&gt;目录：&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;所有「可计算函数」总有一个对应的「图灵机」来计算它&lt;/li&gt;
-  &lt;li&gt;每一个「图灵机」都可以被「编码」为一个不同的 0、1 序列，比如 000，010…&lt;/li&gt;
-  &lt;li&gt;0、1 序列、即二进制，总是可以被转换为一个十进制数的&lt;/li&gt;
+  &lt;li&gt;Web资源 — URI URL URN 资源传输&lt;/li&gt;
+  &lt;li&gt;API — 原因 应用 操作资源&lt;/li&gt;
+  &lt;li&gt;网络 因特网 互联网 万维网&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;所以，我们这个集合实际上是与整数集 $Z$ 一样大（等势）的，我们把这个集合表示为 $\Sigma^{*}$。 易知 $Z$ 是「无穷可数（countably infinite）」的，所以我们有无穷可数个「可计算函数」（注 2）。&lt;/p&gt;
+&lt;h2 id=&quot;web资源&quot;&gt;Web资源&lt;/h2&gt;
+&lt;p&gt;早期 Web资源：在网络中有地址的静态文件&lt;br /&gt;
+现在 Web资源：可以被识别、被命名、或被处理的任何实体&lt;br /&gt;
+资源的形式多种多样，文档、图片、音乐、电影、数据库、网页、服务都可以算作是资源&lt;br /&gt;
+互联网上这么多资源，怎么区分，怎么找到我想要的资源呢？这就需要用到URI(统一资源标志符)&lt;/p&gt;
 
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;而「计算问题」有多少个呢？&lt;/p&gt;
-
-&lt;p&gt;这个问题可以等同于，我们有多少个形如 $\{000, 010\}$ 这样的 0，1 序列的集合？即 $\Sigma^{*}$ 这个集合有多少个子集？用数学语言描述就是求 $\Sigma^{*}$ 的幂集的势 $| P(\Sigma^{*})|$ 。&lt;/p&gt;
-
-&lt;p&gt;由于 $\Sigma^{*}$ 与 $Z$ 是等势的，所以这个问题等价于求 $|P(Z)|$ 的大小。根据 &lt;a href=&quot;https://en.wikipedia.org/wiki/Cantor%2527s_theorem&quot;&gt;Cantor’s theorem&lt;/a&gt;，一个「无穷可数」的集合的幂集是「无穷不可数（uncountably infinite）」的。（注 3）&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;根据 &lt;a href=&quot;https://en.wikipedia.org/wiki/Cantor%2527s_theorem&quot;&gt;Cantor’s theorem&lt;/a&gt;，「无穷不可数集」要比「无穷可数集」大。&lt;/p&gt;
-
-&lt;p&gt;同时，「无穷不可数集」减去「无穷可数集」后仍然是「无穷不可数集」。（注 4）&lt;/p&gt;
-
-&lt;p&gt;所以，「不可计算函数集」，即「计算问题集」与「可计算函数集」的差，仍是「无穷不可数集」，仍比是为「无穷可数集」的「可计算函数集」大。&lt;/p&gt;
-
-&lt;p&gt;因此，「不可计算的函数」比「可计算的函数」多。&lt;/p&gt;
-
-&lt;p&gt;证毕。&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p&gt;注：&lt;/p&gt;
-
+&lt;h3 id=&quot;uri-统一资源标志符&quot;&gt;URI 统一资源标志符&lt;/h3&gt;
+&lt;p&gt;URI是一个用于标识某一互联网资源名称的字符串。每个资源的URI是独一无二的，这样才能把它们区分开。&lt;br /&gt;
+例如：&lt;/p&gt;
 &lt;ol&gt;
-  &lt;li&gt;「&lt;a href=&quot;https://en.wikipedia.org/wiki/Computable_function&quot;&gt;可计算函数&lt;/a&gt;」是算法的直觉说法，「&lt;a href=&quot;https://en.wikipedia.org/wiki/Church%25E2%2580%2593Turing_thesis&quot;&gt;邱奇－图灵论题&lt;/a&gt;」猜想任何在算法上可计算的问题同样可以由图灵机计算。但图灵机并不是唯一的计算模型，其他计算模型包括「&lt;a href=&quot;https://en.wikipedia.org/wiki/Lambda_calculus&quot;&gt;Lambda 算子&lt;/a&gt;」、「$\mu$ - &lt;a href=&quot;https://en.wikipedia.org/wiki/%25CE%259C-recursive_function&quot;&gt;递归函数&lt;/a&gt;」等，它们在计算能力上都是与「图灵机」等价的。&lt;/li&gt;
-  &lt;li&gt;证明「所有可计算函数」的集合是「无穷可数集」的方式有很多，只要找到任意一个与「自然数集」的「双射」即可&lt;/li&gt;
-  &lt;li&gt;也可以直接用康托的对角线法（&lt;a href=&quot;https://en.wikipedia.org/wiki/Cantor%2527s_diagonal_argument&quot;&gt;Cantor’s diagonal argument&lt;/a&gt;）证明「所有计算问题」的集合是「无穷不可数集」&lt;/li&gt;
-  &lt;li&gt;可以用反证法得证&lt;/li&gt;
-  &lt;li&gt;知乎能用 LaTex 了好评&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Aleph_number&quot;&gt;Aleph Number - Wikipedia&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2017/12/12/uncomputable-funcs/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/12/uncomputable-funcs/</guid>
-        
-        <category>知乎</category>
-        
-        <category>计算机科学</category>
-        
-        <category>计算理论</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>「知乎」如何通俗地解释停机问题？</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/20081359/answer/275107187&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;我用 Python 伪代码来解释下，我觉得对这个问题有兴趣的应该都是有点编程基础的，所以直接上 code 应该是最容易的。&lt;/p&gt;
-
-&lt;h2 id=&quot;背景知识&quot;&gt;背景知识&lt;/h2&gt;
-
-&lt;p&gt;「停机问题」研究的是：是否存在一个「程序」，能够判断另外一个「程序」在特定的「输入」下，是会给出结果（停机），还是会无限执行下去（不停机）。&lt;/p&gt;
-
-&lt;p&gt;在下文中，我们用「函数」来表示「程序」，「函数返回」即表示给出了结果。&lt;/p&gt;
-
-&lt;h2 id=&quot;正文&quot;&gt;正文&lt;/h2&gt;
-
-&lt;p&gt;我们假设存在这么一个「停机程序」，不管它是怎么实现的，但是它能够回答「停机问题」：它接受一个「程序」和一个「输入」，然后判断这个「程序」在这个「输入」下是否能给出结果：&lt;/p&gt;
-
-&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# 返回 True  如果 program(input) 会返回
-&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 返回 False 如果 program(input) 不返回
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;（在这里，我们通过把一个函数作为另一个函数的输入来描述一个「程序」作为另一个「程序」的「输入」，如果你不熟悉「头等函数」的概念，你可以把所有文中的函数对应为一个具备该函数的对象。）&lt;/p&gt;
-
-&lt;p&gt;为了帮助大家理解这个「停机程序」的功能，我们举个使用它的例子：&lt;/p&gt;
-
-&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;halt&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# 如果输入是 0，返回，否则无限循环
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 返回 True
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# 返回 False
-&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;是不是很棒？&lt;/p&gt;
-
-&lt;p&gt;不过，如果这个「停机程序」真的存在，那么我就可以写出这么一个「hack 程序」：&lt;/p&gt;
-
-&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;halt&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;hack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;program&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;loop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;这个程序说，如果你 &lt;code class=&quot;highlighter-rouge&quot;&gt;is_halt&lt;/code&gt; 对 &lt;code class=&quot;highlighter-rouge&quot;&gt;program(program)&lt;/code&gt; 判停了，我就无限循环；如果你判它不停，我就立刻返回。&lt;/p&gt;
-
-&lt;p&gt;那么，如果我们把「hack 程序」同时当做「程序」和「输入」喂给「停机程序」，会怎么样呢？&lt;/p&gt;
-
-&lt;div class=&quot;language-py highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;n&quot;&gt;is_halt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;你会发现，如果「停机程序」认为 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 会给出结果，即 &lt;code class=&quot;highlighter-rouge&quot;&gt;is_halt(hack, hack)&lt;/code&gt;) 返回 &lt;code class=&quot;highlighter-rouge&quot;&gt;True&lt;/code&gt;) ，那么实际上 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 会进入无限循环。而如果「停机程序」认为 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 不会给出结果，即 &lt;code class=&quot;highlighter-rouge&quot;&gt;is_halt(hack, hack)&lt;/code&gt; 返回 ，那么实际上 &lt;code class=&quot;highlighter-rouge&quot;&gt;hack(hack)&lt;/code&gt; 会立刻返回结果……&lt;/p&gt;
-
-&lt;p&gt;这里就出现了矛盾和悖论，所以我们只能认为，我们最开始的假设是错的：&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;这个「停机程序」是不存在的。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;意义&quot;&gt;意义&lt;/h2&gt;
-
-&lt;p&gt;简单的说，「停机问题」说明了现代计算机并不是无所不能的。&lt;/p&gt;
-
-&lt;p&gt;上面的例子看上去是刻意使用「自我指涉」来进行反证的，但这只是为了证明方便。实际上，现实中与「停机问题」一样是现代计算机「不可解」的问题还有很多，比如所有「判断一个程序是否会在某输入下怎么样？」的算法、Hilbert 第十问题等等，wikipedia 甚至有一个 &lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/List_of_undecidable_problems&quot;&gt;List of undecidable problems&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h2 id=&quot;漫谈&quot;&gt;漫谈&lt;/h2&gt;
-
-&lt;p&gt;如果你觉得只是看懂了这个反证法没什么意思：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;最初图灵提出「停机问题」只是针对「图灵机」本身的，但是其意义可以被推广到所有「算法」、「程序」、「现代计算机」甚至是「量子计算机」。&lt;/li&gt;
-  &lt;li&gt;实际上「图灵机」只能接受（纸带上的）字符串，所以在图灵机编程中，无论是「输入」还是另一个「图灵机」，都是通过编码来表示的。&lt;/li&gt;
-  &lt;li&gt;「图灵机的计算能力和现代计算机是等价的」，更严谨一些，由于图灵机作为一个假象的计算模型，其储存空间是无限大的，而真实计算机则有硬件限制，所以我们只能说「不存在比图灵机计算能力更强的真实计算机」。&lt;/li&gt;
-  &lt;li&gt;这里的「计算能力」（power）指的是「能够计算怎样的问题」（capablity）而非「计算效率」（efficiency），比如我们说「上下文无关文法」比「正则表达式」的「计算能力」强因为它能解决更多的计算问题。&lt;/li&gt;
-  &lt;li&gt;「图灵机」作为一种计算模型形式化了「什么是算法」这个问题（&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Church%25E2%2580%2593Turing_thesis&quot;&gt;邱奇－图灵论题&lt;/a&gt;）。但图灵机并不是唯一的计算模型，其他计算模型包括「&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Lambda_calculus&quot;&gt;Lambda 算子&lt;/a&gt;」、&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/%25CE%259C-recursive_function&quot;&gt;μ-递归函数&lt;/a&gt;」等，它们在计算能力上都是与「图灵机」等价的。因此，我们可以用「图灵机」来证明「&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Computable_function&quot;&gt;可计算函数&lt;/a&gt;」的上界。也因此可以证明哪些计算问题是超出上界的（即不可解的）。&lt;/li&gt;
-  &lt;li&gt;需要知道的是，只有「可计算的」才叫做「算法」。&lt;/li&gt;
-  &lt;li&gt;「停机问题」响应了「哥德尔的不完备性定理」。&lt;/li&gt;
+  &lt;li&gt;http://www.w3school.com.cn/tags/index.asp 代表W3school网站上的一份参考手册&lt;/li&gt;
+  &lt;li&gt;sftp://67.216.199.87:26894/ 代表我VPS上的ssh服务&lt;/li&gt;
+  &lt;li&gt;thunder://QUFlZDJrOi8vfGZpbGV8JTVCJUU4JUJGJTg1JUU5rOi8vfGZpb…… 代表迅雷服务器上的一部电影&lt;/li&gt;
+  &lt;li&gt;magnet:?xt=urn:btih:AC55FAEAE28DD449F19130961DA3646E7ABA324D 磁力链接，代表一个资源&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;拓展阅读&quot;&gt;拓展阅读：&lt;/h2&gt;
+&lt;h3 id=&quot;url-urn-与-uri&quot;&gt;URL URN 与 URI&lt;/h3&gt;
+&lt;p&gt;URL是统一资源定位符，对可以从互联网上得到的资源的位置和访问方法的一种简洁的表示，是互联网上标准资源的地址。互联网上的每个文件都有一个唯一的URL，它包含的信息指出文件的位置以及浏览器应该怎么处理它。&lt;/p&gt;
 
-&lt;p&gt;中文：&lt;/p&gt;
+&lt;p&gt;URN是统一资源名称。可以表示唯一的资源，但是不能给出实体的位置。系统可以先在本地寻找一个实体，在它试着在Web上找到该实体之前。它也允许Web位置改变，然而这个实体却还是能够被找到。&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//www.matrix67.com/blog/archives/55&quot;&gt;Matrix67: 不可解问题(Undecidable Decision Problem)&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//www.matrix67.com/blog/archives/901&quot;&gt;Matrix67: 停机问题、Chaitin 常数与万能证明方法&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//blog.csdn.net/pongba/article/details/1336028&quot;&gt;刘未鹏：康托尔、哥德尔、图灵–永恒的金色对角线(rev#2) - CSDN 博客&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=http%3A//www.changhai.org/articles/science/mathematics/hilbert10/1.php&quot;&gt;卢昌海：Hilbert 第十问题漫谈 (上)&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;URI包括URL和URN。上面例子中的(1)(2)是URL，因为其中有路径可以确定资源的位置，这样才能找到它。上面例子中的(3)(4)是URN，因为它带有文件的特征码，表示了文件独一无二的身份。&lt;/p&gt;
 
-&lt;p&gt;英文：&lt;/p&gt;
+&lt;p&gt;下面引用知乎的回答进一步解释这些概念&lt;br /&gt;
+&lt;a href=&quot;https://www.zhihu.com/question/21950864&quot;&gt;HTTP 协议中 URI 和 URL 有什么区别？&lt;/a&gt;&lt;/p&gt;
 
-&lt;ul&gt;
+&lt;h3 id=&quot;web资源的传输&quot;&gt;Web资源的传输&lt;/h3&gt;
+&lt;p&gt;在了解Web资源的概念之后，我们知道了URI可以区分不同的资源，根据URI我们就可以找到指定的资源。但还有一个问题，这些Web资源储存在服务器上，它们是怎么传输到我们的电脑上呢？换句话说，当我们请求一个资源时，真实的物理世界发生了哪些事？我们想知道信息是如何传递的？它经过了哪些线路？&lt;br /&gt;
+&lt;a href=&quot;https://www.youtube.com/watch?v=ewrBalT_eBM&amp;amp;t=72s&quot;&gt;How Does the Internet Work?&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;api&quot;&gt;API&lt;/h2&gt;
+&lt;p&gt;API（Application Programming Interface,应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，或理解内部工作机制的细节。API本身是抽象的，它仅定义了一个接口，而不涉及应用程序在实际实现过程中的具体操作。&lt;br /&gt;
+从形式的角度看：&lt;br /&gt;
+API像函数声明一样，指定了参数和返回结果，负责一个程序和其他软件的沟通，本质是预先定义的函数。&lt;br /&gt;
+从设计的角度看：&lt;br /&gt;
+把某些功能封装好，方便其他人调用。调用的人可以很方便使用这些功能，并且可以不需要知道这些功能的具体实现过程。&lt;/p&gt;
+
+&lt;h3 id=&quot;为什么使用api&quot;&gt;为什么使用API&lt;/h3&gt;
+&lt;p&gt;程序之间是互相联系的，它们彼此依赖，需要协调配合等才能完成任务。API的目的就是把这种通讯方式事先约定好，当请求方调用API时，接收方负责实现具体过程。这么一来，请求方只需调用API，不用知道具体操作就能完成任务。&lt;/p&gt;
+
+&lt;h3 id=&quot;api的应用&quot;&gt;API的应用&lt;/h3&gt;
+&lt;p&gt;下面看一些具体的应用情景&lt;/p&gt;
+&lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/Introduction_to_the_Theory_of_Computation&quot;&gt;《Introduction to the Theory of Computation》&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;操作系统API&lt;br /&gt;
+比如你想做一个单机游戏的修改器，修改玩家的生命值。尽管你知道游戏中生命值对应的内存地址，但是修改器和游戏是两个不同的进程，你不能直接修改这个内存。怎么办？我们知道操作系统可以管理计算机硬件与软件资源，它是有权限修改内存的。所以就我们请求操作系统修改内存，这就需要调用操作系统的API。&lt;br /&gt;
+操作系统留给应用程序的一个调用接口，应用程序通过调用操作系统的API而使操作系统去执行应用程序的命令。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DdNRDvLACg5Q&quot;&gt;Turing Machines Explained - Computerphile&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;多媒体API&lt;br /&gt;
+DirectX是由微软公司创建的多媒体编程接口。由C++编程语言实现，遵循COM。被广泛使用于Microsoft Windows、Microsoft XBOX、Microsoft XBOX 360和Microsoft XBOX ONE电子游戏开发，并且只能支持这些平台。最新版本为DirectX 12，创建在最新的Windows10。&lt;br /&gt;
+DirectX API 帮助游戏开发者设计炫酷的画面，而不必在意显卡是如何工作的。&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//www.youtube.com/watch%3Fv%3DmacM_MtS_w4%26t%3D29s&quot;&gt;Turing &amp;amp; The Halting Problem - Computerphile&lt;/a&gt;&lt;/p&gt;
+    &lt;p&gt;Web API&lt;br /&gt;
+什么是Web API呢？&lt;br /&gt;
+如果我们想要获取一篇Blog，输入http://localhost:9000/blog/123 ，就可以看到id为123的Blog页面，但这个结果是HTML页面，它同时混合包含了Blog的数据和Blog的展示两个部分。对于用户来说，阅读起来没有问题，但是，如果机器读取，就很难从HTML中解析出Blog的数据。&lt;br /&gt;
+如果一个URL返回的不是HTML，而是机器能直接解析的数据，这个URL就可以看成是一个Web API。比如，读取http://localhost:9000/api/blogs/123 ，如果能直接返回Blog的数据，那么机器就可以直接读取。&lt;br /&gt;
+REST就是一种设计API的模式。最常用的数据格式是JSON。由于JSON能直接被JavaScript读取，所以，以JSON格式编写的REST风格的API具有简单、易读、易用的特点。 &lt;br /&gt;
+编写API有什么好处呢？&lt;br /&gt;
+由于API就是把Web App的功能全部封装了，所以，通过API操作数据，可以极大地把前端和后端的代码隔离，使得后端代码易于测试，前端代码编写更简单。&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://link.zhihu.com/?target=https%3A//cs.stackexchange.com/questions/32845/why-really-is-the-halting-problem-so-important&quot;&gt;Why, really, is the Halting Problem so important?&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 12 Dec 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2017/12/12/halting-problem/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/12/12/halting-problem/</guid>
-        
-        <category>知乎</category>
-        
-        <category>计算机科学</category>
-        
-        <category>计算理论</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>「知乎」为什么 CSS 这么难学？</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;这篇文章转载自&lt;a href=&quot;https://www.zhihu.com/question/66167982/answer/240434582&quot;&gt;我在知乎上的回答&lt;/a&gt;&lt;/p&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;web中的api与资源&quot;&gt;Web中的API与资源&lt;/h3&gt;
+&lt;p&gt;服务器上储存了很多各种各样的资源，其中一部分是对外开放的。如果用户随意的读取、修改、删除资源，这就很危险了。所以，对于外部的请求，我们总是使用API来操作服务器上的数据。使用API好处很多，第一：对请求做出了限制，保证了服务器数据的安全。第二：制定了一套规范，便于开发。&lt;br /&gt;
+下面举一些例子来说明API是如何操作资源的。&lt;/p&gt;
+
+&lt;p&gt;V2EX是一个知名技术创意网站，由设计师、程序员及有创意的人参与的社区。它基于兴趣将用户创建的内容组织分类成不同“节点”，网站以内容的活跃程度决定在首页排序的位置。&lt;br /&gt;
+我们来看看这个网站的API &lt;a href=&quot;https://github.com/djyde/V2EX-API&quot;&gt;V2EX API&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;实验：用POSTMAN发出API请求，测试结果&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;对我来说，CSS 难学以及烦人是因为它&lt;strong&gt;「出乎我意料之外的复杂」&lt;/strong&gt;且让我觉得&lt;strong&gt;「定位矛盾」&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;推荐视频 &lt;a href=&quot;https://www.youtube.com/watch?v=s7wmiS2mSXY&quot;&gt;What is an API&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;//www.zhihu.com/people/b90c7eb6d3d5a4e2ce453dd8ad377672&quot;&gt;@方应杭&lt;/a&gt; 老师的答案我赞了：CSS 的属性互不正交，大量的依赖与耦合难以记忆。&lt;/p&gt;
+&lt;h2 id=&quot;关于网络补充&quot;&gt;关于网络（补充）&lt;/h2&gt;
+&lt;p&gt;上面谈到的大部分内容都和Web有关。那么，Web到底是什么？  为了弄清楚这个问题，我们先要搞懂下面这些关键词。&lt;br /&gt;
+关键词：&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;互联网(internet;internetwork;internection network)&lt;/li&gt;
+  &lt;li&gt;因特网(Internet)&lt;/li&gt;
+  &lt;li&gt;万维网(WWW;world wide web;Web)&lt;/li&gt;
+  &lt;li&gt;HTTP(HyperText Transfer Protocol)&lt;/li&gt;
+  &lt;li&gt;HTML(HyperText Markup Language)&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;&lt;a href=&quot;//www.zhihu.com/people/596c0a5fdd9b36cea06bac348d418824&quot;&gt;@顾轶灵&lt;/a&gt; &lt;a href=&quot;//www.zhihu.com/people/c02ec74a44ee4a6784d002c33e293652&quot;&gt;@王成&lt;/a&gt; 说得也没错：CSS 的很多规则是贯彻整个体系的，而且都记在规范里了，是有规律的，你应该好好读文档而不是去瞎试。&lt;/p&gt;
+&lt;p&gt;网络：由若干结点和连接这些结点的链路组成。&lt;br /&gt;
+互联网：是网络的网络，是所有类型网络的母集。&lt;br /&gt;
+因特网：世界上最大的互联网网络。即 因特网概念从属于互联网概念。习惯上，大家把连接在因特网上的计算机都称为主机。&lt;br /&gt;
+万维网：万维网是一个大规模的、联机式的信息贮藏所，英文简称web。 特点是基于HTTP、HTML技术。简单理解是与“浏览网页”相关的网络系统。&lt;/p&gt;
 
-&lt;p&gt;「&lt;strong&gt;CSS是一门正儿八经的编程语言，请拿出你学C++或者Java的态度对待它&lt;/strong&gt;」&lt;/p&gt;
+&lt;p&gt;Web（World Wide Web）即全球广域网，也称为万维网，它是一种基于超文本和HTTP的、全球性的、动态交互的、跨平台的分布式图形信息系统。是建立在Internet上的一种网络服务，为浏览者在Internet上查找和浏览信息提供了图形化的、易于访问的直观界面，其中的文档及超级链接将Internet上的信息节点组织成一个互为关联的网状结构。&lt;br /&gt;
+万维网用链接的方法能非常方便地从因特网上的一个站点访问另一个站点（超链技术），具有提供分布式服务的特点。万维网是一个分布式的超媒体系统，是超文本系统的扩充。万维网基于B/S架构工作。   &lt;br /&gt;
+&lt;a href=&quot;https://baike.baidu.com/item/Web/150564#2&quot;&gt;Web 万维网&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;但是问题就在这了，无论从我刚学习前端还是到现在，我都没有把 CSS 作为一门正儿八经的编程语言（&lt;strong&gt;而且显然图灵不完全的它也不是&lt;/strong&gt;），CSS 在我眼里一直就是一个布局、定义视觉样式用的 DSL，与 HTML 一样就是一个标记语言。&lt;/p&gt;
+&lt;p&gt;HTTP：为解决“用什么样的协议来实现整个因特网上的万维网文档”这一难题，就要使万维网客户程序（以浏览器为主，但不限于浏览器）与万维网服务器程序之间的交互遵守严格的协议，这就是超文本传送协议（HyperText Transfer Protocol）。HTTP是处于应用层的协议，使用TCP传输层协议进行可靠的传送。因此，需要特别提醒的是，万维网是基于因特网的一种广泛因特网应用系统，且万维网采用的是HTTP（端口：80）/HTTPS（端口：43）的传输协议，但因特网还有其他的网络应用系统（如：FTP、SMTP等等）。&lt;/p&gt;
 
-&lt;p&gt;写 CSS 很有趣，CSS 中像继承、类、伪类这样的设计确实非常迎合程序员的思路，各种排列组合带来了很多表达上的灵活性。但如果可以选择，在生产环境里我更愿意像 iOS/Android/Windows 开发那样，把这门 DSL 作为 IDE WYSIWYG 编辑器的编译目标就可以了，当然你可以直接编辑生成的代码，但我希望「对于同一种效果，有比较确定的 CSS 表达方式」&lt;/p&gt;
+&lt;p&gt;HTML：为了解决“怎样使不同作者创作的不同风格的万维网文档，都能在因特网上的各种主机上显示出来，同时使用户清楚地知道在什么地方存在着链接”这一问题，万维网使用超文本标记语言（HyperText Markup Language），使得万维网页面的设计者可以很方便地用链接从页面的某处链接到因特网的任何一个万维网页面，并且能够在自己的主机品目上将这些页面显示出来。HTML与txt一样，仅仅是是一种文档，不同之处在于，这种文档专供于浏览器上为浏览器用户提供统一的界面呈现的统一规约。且具备结构化的特征，这是txt所不具备的强制规定。&lt;/p&gt;
 
-&lt;p&gt;因为我并不在 CSS 里处理数据结构，写算法、业务逻辑啊，我就是希望我能很精确得表达我想要的视觉效果就可以了。如果我需要更复杂的灵活性和控制，你可以用真正的编程语言来给我暴露 API，而不是在 CSS 里给我更多的「表达能力」&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;CSS 语言本身的表达能力对于布局 DSL 来说是过剩的&lt;/strong&gt;，所以你仅仅用 CSS 的一个很小的子集就可以在 React Native 里搞定 iOS/Android 的布局了。你会发现各个社区（典型如 React）、团队都要花很多时间去找自己项目适合的那个 CSS 子集（so called 最佳实践）。而且 CSS 的这种复杂度其实还挺严重得影响了浏览器的渲染性能，很多优化变得很难做。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;而 CSS 的表达能力对于编程语言来说又严重不够&lt;/strong&gt;，一是语言特性不够，所以社区才会青睐 Less、Sass 这些编译到 CSS 的语言，然后 CSS 自己也在加不痛不痒的 Variable。二是 API 不够，就算你把规范读了，你会发现底层 CSSOM 的 Layout、Rendering 的东西你都只能强行用声明式的方式去 hack（比如用 transform 开新的 composition layer）而没有真正的 API 可以用，所以 W3C 才会去搞 Houdini 出来。&lt;/p&gt;
-
-&lt;p&gt;这种不上不下的感觉就让我觉得很「矛盾」，你既没法把 CSS 当一个很简单的布局标记语言去使用，又没办法把它作为一个像样的编程语言去学习和使用。&lt;/p&gt;
-
-&lt;p&gt;在写 CSS 和 debug CSS 的时候我经常处在一种「MD 就这样吧反正下次还要改」和「MD 这里凭什么是这样的我要研究下」的精分状态，可是明明我写 CSS 最有成就感的时候是看到漂亮的 UI 啊。&lt;/p&gt;
-
-&lt;p&gt;以上。&lt;/p&gt;
+&lt;h2 id=&quot;部分参考资料&quot;&gt;部分参考资料&lt;/h2&gt;
+&lt;p&gt;https://en.wikipedia.org/wiki/Web_resource&lt;br /&gt;
+https://www.zhihu.com/question/21950864&lt;br /&gt;
+https://baike.baidu.com/item/url/110640?fr=aladdin&lt;br /&gt;
+https://baike.baidu.com/item/URN&lt;br /&gt;
+https://www.zhihu.com/question/38594466&lt;br /&gt;
+https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%8E%A5%E5%8F%A3&lt;br /&gt;
+https://www.youtube.com/watch?v=s7wmiS2mSXY&lt;br /&gt;
+https://www.zhihu.com/question/19860216&lt;br /&gt;
+https://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001402402473485d8c205b735ee4e698f90769960fcec4b000&lt;br /&gt;
+https://www.zhihu.com/question/58274241&lt;br /&gt;
+https://github.com/djyde/V2EX-API&lt;br /&gt;
+https://www.douban.com/note/323728072/&lt;br /&gt;
+https://baike.baidu.com/item/Web/150564&lt;br /&gt;
+https://www.zhihu.com/question/19860216&lt;br /&gt;
+https://www.zhihu.com/question/20597473&lt;/p&gt;
 </description>
-        <pubDate>Fri, 06 Oct 2017 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2017/10/06/css-complaints/</link>
-        <guid isPermaLink="true">http://localhost:4000/2017/10/06/css-complaints/</guid>
+        <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019/04/22/Web%E5%88%86%E4%BA%AB/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/22/Web%E5%88%86%E4%BA%AB/</guid>
         
         <category>Web</category>
         
-        <category>CSS</category>
+        
+      </item>
+    
+      <item>
+        <title>Ubuntu 18.04 配置指南</title>
+        <description>&lt;h1 id=&quot;ubuntu-1804-配置指南1&quot;&gt;Ubuntu 18.04 配置指南(1)&lt;/h1&gt;
+
+&lt;p&gt;这几天都在折腾Ubuntu，积累了一些经验，想把它记录下来分享给大家。主要包括我在使用过程中遇到的问题和解决方法，配置系统、桌面环境，还有各种界面美化、插件安装等等。&lt;br /&gt;
+本以为 Ubuntu18.04 会修复很多图形界面的BUG和设计失误，然而并没有，用了几天感觉很失望。各种小问题不断出现，极度影响用户体验。（绝大部分都是GUI的问题）&lt;br /&gt;
+下面开始进入正题～～  （本文持续更新）&lt;/p&gt;
+&lt;h2 id=&quot;安装过程&quot;&gt;安装过程&lt;/h2&gt;
+&lt;p&gt;由于显卡驱动等问题，可能无法进入Ubuntu安装界面。&lt;br /&gt;
+在Install Ubuntu 界面时  按“e”建进入编辑，修改倒数第二行：&lt;br /&gt;
+将&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;quite splash --- &lt;/code&gt;&lt;br /&gt;
+改为&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;quite splash nomodeset&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;nomodeset的作用&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The newest kernels have moved the video mode setting into the kernel. So all the programming of the hardware specific clock rates and registers on the video card happen in the kernel rather than in the X driver when the X server starts.. This makes it possible to have high resolution nice looking splash (boot) screens and flicker free transitions from boot splash to login screen. Unfortunately, on some cards this doesnt work properly and you end up with a black screen. Adding the nomodeset parameter instructs the kernel to not load video drivers and use BIOS modes instead until X is loaded.&lt;br /&gt;
+翻译&lt;br /&gt;
+最新的内核已经把视频模式设置嵌入内核中，所以所有显卡硬件程序的指定时钟和寄存器当图形服务器启动时在内核进行而不是图形设备运行，这使得我们在启动时可以看到不闪的和高分辨率的好看的启动界面，但是，在某些视频卡它不能正常工作而现实黑屏，增加nomodeset参数则告诉内核不要加载显卡而用BIOS模式直到图形界面运行&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;配置ubuntu系统&quot;&gt;配置Ubuntu系统&lt;/h2&gt;
+
+&lt;h3 id=&quot;添加源&quot;&gt;添加源&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;什么是软件源?&lt;/strong&gt;&lt;br /&gt;
+源,在Ubuntu下,它相当于软件库,需要什么软件,只要记得正确的软件名就可以用命令安装&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;软件源的分类&lt;/strong&gt;&lt;br /&gt;
+在 Ubuntu 中软件源其实还细分为下面两种：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ubuntu 官方软件源&lt;/li&gt;
+  &lt;li&gt;PPA 软件源  &lt;br /&gt;
+Ubuntu 官方软件源:
+Ubuntu 官方软件源中包含了 Ubuntu 系统中所用到的绝大部分的软件，它对应的源列表是 /etc/apt/sources.list。只需要修改这个文件，就能添加我们想要的源。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;一定要添加中科大的源！！！&lt;/strong&gt;推荐再加一个国内的源，比如阿里、网易、清华&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;参考资料 https://www.jianshu.com/p/57a91bc0c594&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;sudo-免密码&quot;&gt;sudo 免密码&lt;/h3&gt;
+&lt;p&gt;在配置环境时，每次安装软件都要输密码感觉很麻烦，所以暂时取消sudo密码&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;$ sudo visudo&lt;/code&gt;&lt;br /&gt;
+最后一行添加 &lt;code class=&quot;highlighter-rouge&quot;&gt;jzc    ALL=(ALL:ALL)NOPASSWD: ALL&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;双击sh行为设置&quot;&gt;双击*.sh行为设置&lt;/h3&gt;
+&lt;p&gt;为了安全，系统默认的方式是：双击*.sh开启编辑模式。但这样很不方便，如果要运行shell脚本，只能在终端里输入命令，右键菜单是找不到运行的。&lt;br /&gt;
+解决方法：&lt;br /&gt;
+任意文件夹下，菜单中选择Edit-&amp;gt;Preference-&amp;gt;Behavior选项卡，可以看到默认为View executable text files when they are opened。把其选择为Ask each time，之后每次鼠标点击，可以让用户选择以何种方式响应双击事件。&lt;/p&gt;
+
+&lt;h3 id=&quot;grub-设置&quot;&gt;grub 设置&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;解决关机卡死的问题&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo vi /etc/default/grub&lt;/code&gt; &lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet splash&quot;&lt;/code&gt;   -&amp;gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;&quot;&lt;/code&gt;  （删除引号中的内容）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;修改等待时间&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;GRUB_TIMEOUT=5&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;保存记住上次的启动项&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;GRUB_DEFAULT=saved&lt;/code&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;GRUB_SAVEDEFAULT=true&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;编辑器的首选项&quot;&gt;编辑器的首选项&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;设置终端的默认编辑器&lt;/strong&gt;&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;update-alternatives --config editor &lt;/code&gt;&lt;br /&gt;
+&lt;strong&gt;gedit 配置&lt;/strong&gt; &lt;br /&gt;
+打开gedit，在左上角Activities的右边找到gedit，右键，选择Preference&lt;/p&gt;
+
+&lt;h2 id=&quot;软件设置&quot;&gt;软件设置&lt;/h2&gt;
+
+&lt;h3 id=&quot;安装输入法-input-method&quot;&gt;安装输入法 Input Method&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;安装fcitx&lt;/li&gt;
+  &lt;li&gt;设置，Language Support -&amp;gt; Keyboard input method system -&amp;gt; fcitx&lt;/li&gt;
+  &lt;li&gt;上网搜索 搜狗输入法 for Linux 下载安装&lt;/li&gt;
+  &lt;li&gt;重启&lt;/li&gt;
+  &lt;li&gt;gnome右上角Keyboard -&amp;gt; Configure 添加 Sougou&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;科学上网&quot;&gt;科学上网&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;安装Chrome 同时保留 Firefox(很重要！！！！)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Firefox不能翻墙问题&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Please also try setting network.proxy.socks_remote_dns to true in about:config. You can get a list of SOCKS proxies from samair. You may have to restart Firefox and also Clear Now the Cache and Cookies in Tools (Alt + T) &amp;gt; Clear Recent History.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;下载chrome for linux 安装包，离线安装&lt;br /&gt;
+pip安装ss 客户端配置格式如下(和服务器保持一致)&lt;/p&gt;
+&lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+7
+8
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; 
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;server&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;server_ip&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;server_port&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30696&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;local_port&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1080&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;password&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;timeout&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;600&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;method&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;rc4-md5&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;启动  sslocal -c /home/usr/ss.json&lt;br /&gt;
+添加开机自启&lt;/p&gt;
+
+&lt;p&gt;kcptun 的安装及其配置&lt;br /&gt;
+略&lt;/p&gt;
+
+&lt;h3 id=&quot;git&quot;&gt;Git&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;安装git&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install git&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;配置用户信息
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;ubuntu:~$ git config --global user.name &quot;Your Name Here&quot;
+ubuntu:~$ git config --global user.email &quot;youremail@address.here&quot;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;创建秘钥文件&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ssh-keygen -t rsa -C &quot;你的github账号邮箱&quot;&lt;/code&gt;&lt;br /&gt;
+默认密钥文件路径在~/.ssh，id_rsa是私钥文件，id_rsa.pub是公钥文件&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;将公钥添加到Github&lt;br /&gt;
+将id_rsa.pub文件内容全部复制&lt;br /&gt;
+登陆到GitHub上，右上角小头像-&amp;gt;Setting-&amp;gt;SSH and GPG keys中，点击new SSH key&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</guid>
+        
+        <category>Ubuntu</category>
+        
+        <category>配置</category>
         
         
       </item>
