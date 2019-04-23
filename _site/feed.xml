@@ -5,8 +5,8 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 23 Apr 2019 14:14:28 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Apr 2019 14:14:28 +0000</lastBuildDate>
+    <pubDate>Tue, 23 Apr 2019 14:21:53 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Apr 2019 14:21:53 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -116,7 +116,7 @@ gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;redcarpet &lt;span cla
 就执行 &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve &lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;img src=&quot;blog_pics/pic1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/in-post/blog_pics/pic1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;成功，接下来&lt;del&gt;阅读官方文档，从头开始，闭门造车&lt;/del&gt;，当然是使用别人配置好的模板适当修改，我们就能做出自己的博客啦。  &lt;br /&gt;
 在网上随便找了一些：&lt;/p&gt;
@@ -168,10 +168,12 @@ jiangzc.github.io
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;在容器里，输入&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;， 可能要解决依赖项问题 &lt;code class=&quot;highlighter-rouge&quot;&gt;gem install ...&lt;/code&gt;&lt;br /&gt;
 浏览器访问http://localhost:4000 ， 效果如下
-&lt;img src=&quot;blog_pics/pic2.png&quot; alt=&quot;&quot; /&gt;
-后续配置参考 https://taylantatli.github.io/Moon/moon-theme/ ，完成后用&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;重新生成页面，本地确认后push到github上就可以了。&lt;/p&gt;
+&lt;img src=&quot;/img/in-post/blog_pics/pic2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;命令参考&quot;&gt;命令参考&lt;/h2&gt;
+&lt;p&gt;后续配置参考 https://taylantatli.github.io/Moon/moon-theme/&lt;br /&gt;
+完成后用&lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt; 或 &lt;code class=&quot;highlighter-rouge&quot;&gt;bundle exec jekyll serve&lt;/code&gt;重新生成页面，本地确认后push到github上就可以了。&lt;/p&gt;
+
+&lt;h2 id=&quot;常用命令参考&quot;&gt;常用命令参考&lt;/h2&gt;
 &lt;p&gt;停止容器 &lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker container stop jekyll&lt;/code&gt;&lt;/p&gt;
 
@@ -181,8 +183,20 @@ jiangzc.github.io
 &lt;p&gt;开启容器、构建网站、启动Web服务&lt;br /&gt;
 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker container start jekyll &amp;amp;&amp;amp; docker exec -it  jekyll jekyll serve&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;开启容器、构建网站、git add and commit、启动Web服务
-&lt;code class=&quot;highlighter-rouge&quot;&gt;docker container start jekyll &amp;amp;&amp;amp; docker exec -it  jekyll jekyll build &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m 'new file'&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;开启容器、构建网站、git add and commit、启动Web服务&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; ./jiangzc.github.io
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;docker container start jekyll &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt;  jekyll jekyll build &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; git add &lt;span class=&quot;nt&quot;&gt;--all&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
+git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'new file'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; docker &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-it&lt;/span&gt;  jekyll jekyll serve
+
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&quot;相关资料&quot;&gt;相关资料&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.ezlippi.com/blog/2015/03/github-pages-blog.html&quot;&gt;利用github-pages建立个人博客&lt;/a&gt;  非常好 &lt;br /&gt;
 &lt;a href=&quot;https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B&quot;&gt;博客搭建详细教程&lt;/a&gt;

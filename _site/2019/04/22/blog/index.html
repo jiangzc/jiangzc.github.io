@@ -344,7 +344,7 @@ gem <span class="nb">install </span>redcarpet <span class="o">&amp;&amp;</span> 
 就执行 <code class="highlighter-rouge">jekyll serve </code></p>
 </blockquote>
 
-<p><img src="blog_pics/pic1.png" alt="" /></p>
+<p><img src="/img/in-post/blog_pics/pic1.png" alt="" /></p>
 
 <p>成功，接下来<del>阅读官方文档，从头开始，闭门造车</del>，当然是使用别人配置好的模板适当修改，我们就能做出自己的博客啦。  <br />
 在网上随便找了一些：</p>
@@ -396,10 +396,12 @@ jiangzc.github.io
 </pre></td></tr></tbody></table></code></pre></div></div>
 <p>在容器里，输入<code class="highlighter-rouge">jekyll serve</code> 或 <code class="highlighter-rouge">bundle exec jekyll serve</code>， 可能要解决依赖项问题 <code class="highlighter-rouge">gem install ...</code><br />
 浏览器访问http://localhost:4000 ， 效果如下
-<img src="blog_pics/pic2.png" alt="" />
-后续配置参考 https://taylantatli.github.io/Moon/moon-theme/ ，完成后用<code class="highlighter-rouge">jekyll serve</code> 或 <code class="highlighter-rouge">bundle exec jekyll serve</code>重新生成页面，本地确认后push到github上就可以了。</p>
+<img src="/img/in-post/blog_pics/pic2.png" alt="" /></p>
 
-<h2 id="命令参考">命令参考</h2>
+<p>后续配置参考 https://taylantatli.github.io/Moon/moon-theme/<br />
+完成后用<code class="highlighter-rouge">jekyll serve</code> 或 <code class="highlighter-rouge">bundle exec jekyll serve</code>重新生成页面，本地确认后push到github上就可以了。</p>
+
+<h2 id="常用命令参考">常用命令参考</h2>
 <p>停止容器 <br />
 <code class="highlighter-rouge">docker container stop jekyll</code></p>
 
@@ -409,8 +411,20 @@ jiangzc.github.io
 <p>开启容器、构建网站、启动Web服务<br />
 <code class="highlighter-rouge">docker container start jekyll &amp;&amp; docker exec -it  jekyll jekyll serve</code></p>
 
-<p>开启容器、构建网站、git add and commit、启动Web服务
-<code class="highlighter-rouge">docker container start jekyll &amp;&amp; docker exec -it  jekyll jekyll build &amp;&amp; git add --all &amp;&amp; git commit -m 'new file'</code></p>
+<p>开启容器、构建网站、git add and commit、启动Web服务</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="nv">$ </span><span class="nb">cd</span> ./jiangzc.github.io
+
+<span class="nv">$ </span>docker container start jekyll <span class="o">&amp;&amp;</span> docker <span class="nb">exec</span> <span class="nt">-it</span>  jekyll jekyll build <span class="o">&amp;&amp;</span> git add <span class="nt">--all</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
+git commit <span class="nt">-m</span> <span class="s1">'new file'</span> <span class="o">&amp;&amp;</span> docker <span class="nb">exec</span> <span class="nt">-it</span>  jekyll jekyll serve
+
+<span class="nv">$ </span>git push
+</pre></td></tr></tbody></table></code></pre></div></div>
 <h2 id="相关资料">相关资料</h2>
 <p><a href="https://www.ezlippi.com/blog/2015/03/github-pages-blog.html">利用github-pages建立个人博客</a>  非常好 <br />
 <a href="https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B">博客搭建详细教程</a>
