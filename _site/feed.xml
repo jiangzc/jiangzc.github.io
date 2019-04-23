@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JZC Blog</title>
-    <description>关于程序与设计、黑客与画家 | 黄玄，Web &amp; Mobile Lover，Software Engineer，UX Designer | 这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界。</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Apr 2019 12:30:00 +0000</pubDate>
-    <lastBuildDate>Mon, 22 Apr 2019 12:30:00 +0000</lastBuildDate>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 23 Apr 2019 13:55:57 +0000</pubDate>
+    <lastBuildDate>Tue, 23 Apr 2019 13:55:57 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -61,7 +61,13 @@ jekyll镜像地址 https://github.com/envygeeks/jekyll-docker/blob/master/README
 6
 7
 8
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# In containree&lt;/span&gt;
+9
+10
+11
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;# 进入了吗&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;                  
+/home/jzc/Programs/jiangzc.github.io
+
 &lt;span class=&quot;c&quot;&gt;# 容器名为jekyll&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# 当前目录映射到容器内部的/srv/jekyll&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# 端口映射4000:400, 进入bash&lt;/span&gt;
@@ -98,7 +104,7 @@ bash bundle config mirror.https://rubygems.org https://mirrors.tuna.tsinghua.edu
 &lt;p&gt;容器内部，安装可能用到的插件&lt;/p&gt;
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;bundle update
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;bundle update &lt;span class=&quot;c&quot;&gt;# 很慢，估计等5分钟....&lt;/span&gt;
 gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;redcarpet &lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; gem &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;pygments.rb
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -172,8 +178,8 @@ jiangzc.github.io
 &lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot;&gt;阮一峰的网络日志&lt;/a&gt; 推荐看一下&lt;/p&gt;
 </description>
         <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2019/04/22/blog/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/04/22/blog/</guid>
+        <link>/2019/04/22/blog/</link>
+        <guid isPermaLink="true">/2019/04/22/blog/</guid>
         
         <category>github</category>
         
@@ -309,8 +315,8 @@ https://www.zhihu.com/question/19860216&lt;br /&gt;
 https://www.zhihu.com/question/20597473&lt;/p&gt;
 </description>
         <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2019/04/22/Web%E5%88%86%E4%BA%AB/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/04/22/Web%E5%88%86%E4%BA%AB/</guid>
+        <link>/2019/04/22/Web%E5%88%86%E4%BA%AB/</link>
+        <guid isPermaLink="true">/2019/04/22/Web%E5%88%86%E4%BA%AB/</guid>
         
         <category>Web</category>
         
@@ -462,8 +468,8 @@ ubuntu:~$ git config --global user.email &quot;youremail@address.here&quot;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</link>
-        <guid isPermaLink="true">http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</guid>
+        <link>/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</link>
+        <guid isPermaLink="true">/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</guid>
         
         <category>Ubuntu</category>
         
