@@ -399,6 +399,18 @@ jiangzc.github.io
 <img src="blog_pics/pic2.png" alt="" />
 后续配置参考 https://taylantatli.github.io/Moon/moon-theme/ ，完成后用<code class="highlighter-rouge">jekyll serve</code> 或 <code class="highlighter-rouge">bundle exec jekyll serve</code>重新生成页面，本地确认后push到github上就可以了。</p>
 
+<h2 id="命令参考">命令参考</h2>
+<p>停止容器 <br />
+<code class="highlighter-rouge">docker container stop jekyll</code></p>
+
+<p>开启容器、构建网站<br />
+<code class="highlighter-rouge">docker container start jekyll &amp;&amp; docker exec -it  jekyll jekyll build</code></p>
+
+<p>开启容器、构建网站、启动Web服务<br />
+<code class="highlighter-rouge">docker container start jekyll &amp;&amp; docker exec -it  jekyll jekyll serve</code></p>
+
+<p>开启容器、构建网站、git add and commit、启动Web服务
+<code class="highlighter-rouge">docker container start jekyll &amp;&amp; docker exec -it  jekyll jekyll build &amp;&amp; git add --all &amp;&amp; git commit -m 'new file'</code></p>
 <h2 id="相关资料">相关资料</h2>
 <p><a href="https://www.ezlippi.com/blog/2015/03/github-pages-blog.html">利用github-pages建立个人博客</a>  非常好 <br />
 <a href="https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B">博客搭建详细教程</a>
@@ -410,7 +422,7 @@ jiangzc.github.io
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2019/04/22/Web%E5%88%86%E4%BA%AB/" data-toggle="tooltip" data-placement="top" title="Web介绍">
+                        <a href="/2019/01/07/Web%E5%88%86%E4%BA%AB/" data-toggle="tooltip" data-placement="top" title="Web介绍">
                         Previous<br>
                         <span>Web介绍</span>
                         </a>
