@@ -29,8 +29,8 @@
     <meta property="article:tag" content="博客">
     
     
-    <meta property="og:image" content="/img/avatar-hux-ny.jpg">
-    <meta property="og:url" content="/2019/04/22/blog/">
+    <meta property="og:image" content="http://localhost:4000/img/avatar-hux-ny.jpg">
+    <meta property="og:url" content="http://localhost:4000/2019/04/22/blog/">
     <meta property="og:site_name" content="JZC的博客 | JZC Blog">
     
     <title>Github博客搭建指南（JEKYLL框架） - JZC的博客 | JZC Blog</title>
@@ -42,7 +42,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="/2019/04/22/blog/">
+    <link rel="canonical" href="http://localhost:4000/2019/04/22/blog/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -298,7 +298,7 @@ jekyll镜像地址 https://github.com/envygeeks/jekyll-docker/blob/master/README
 
 <span class="c"># 容器名为jekyll</span>
 <span class="c"># 当前目录映射到容器内部的/srv/jekyll</span>
-<span class="c"># 端口映射4000:400, 进入bash</span>
+<span class="c"># 端口映射4000:4000, 进入bash</span>
 docker run <span class="nt">--name</span> jekyll <span class="se">\</span>
   <span class="nt">--volume</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PWD</span><span class="s2">:/srv/jekyll"</span>  <span class="se">\</span>
   <span class="nt">-p</span> 4000:4000	 <span class="se">\</span>
@@ -426,10 +426,12 @@ git commit <span class="nt">-m</span> <span class="s1">'new file'</span> <span c
 <span class="nv">$ </span>git push
 </pre></td></tr></tbody></table></code></pre></div></div>
 <h2 id="相关资料">相关资料</h2>
-<p><a href="https://www.ezlippi.com/blog/2015/03/github-pages-blog.html">利用github-pages建立个人博客</a>  非常好 <br />
-<a href="https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B">博客搭建详细教程</a>
- 很详细，但没有使用jekyll框架，它是基于成品修改的，不够个性化<br />
-<a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">阮一峰的网络日志</a> 推荐看一下</p>
+<p><a href="https://www.ezlippi.com/blog/2015/03/github-pages-blog.html">利用github-pages建立个人博客</a>  非常好</p>
+
+<p><a href="https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B">博客搭建详细教程</a>
+ 很详细，但没有使用jekyll框架，它是基于成品修改的，不够个性化</p>
+
+<p><a href="http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html">阮一峰的网络日志</a> 推荐看一下</p>
 
 
                 <hr style="visibility: hidden;">
@@ -473,8 +475,18 @@ git commit <span class="nt">-m</span> <span class="s1">'new file'</span> <span c
         
         
         
+        </a>
         
         
+                <a data-sort="0002" 
+                    href="/archive/?tag=Ubuntu"
+                    title="Ubuntu"
+                    rel="2">Ubuntu</a>
+        
+                <a data-sort="0002" 
+                    href="/archive/?tag=%E9%85%8D%E7%BD%AE"
+                    title="配置"
+                    rel="2">配置
     </div>
 </section>
 

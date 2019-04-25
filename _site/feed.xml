@@ -3,10 +3,10 @@
   <channel>
     <title>JZC Blog</title>
     <description></description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 23 Apr 2019 14:21:53 +0000</pubDate>
-    <lastBuildDate>Tue, 23 Apr 2019 14:21:53 +0000</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 25 Apr 2019 12:25:39 +0000</pubDate>
+    <lastBuildDate>Thu, 25 Apr 2019 12:25:39 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -70,7 +70,7 @@ jekyll镜像地址 https://github.com/envygeeks/jekyll-docker/blob/master/README
 
 &lt;span class=&quot;c&quot;&gt;# 容器名为jekyll&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# 当前目录映射到容器内部的/srv/jekyll&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# 端口映射4000:400, 进入bash&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# 端口映射4000:4000, 进入bash&lt;/span&gt;
 docker run &lt;span class=&quot;nt&quot;&gt;--name&lt;/span&gt; jekyll &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;--volume&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$PWD&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:/srv/jekyll&quot;&lt;/span&gt;  &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
   &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; 4000:4000	 &lt;span class=&quot;se&quot;&gt;\&lt;/span&gt;
@@ -198,14 +198,16 @@ git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot
 &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git push
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&quot;相关资料&quot;&gt;相关资料&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.ezlippi.com/blog/2015/03/github-pages-blog.html&quot;&gt;利用github-pages建立个人博客&lt;/a&gt;  非常好 &lt;br /&gt;
-&lt;a href=&quot;https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B&quot;&gt;博客搭建详细教程&lt;/a&gt;
- 很详细，但没有使用jekyll框架，它是基于成品修改的，不够个性化&lt;br /&gt;
-&lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot;&gt;阮一峰的网络日志&lt;/a&gt; 推荐看一下&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.ezlippi.com/blog/2015/03/github-pages-blog.html&quot;&gt;利用github-pages建立个人博客&lt;/a&gt;  非常好&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/qiubaiying/qiubaiying.github.io/wiki/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E8%AF%A6%E7%BB%86%E6%95%99%E7%A8%8B&quot;&gt;博客搭建详细教程&lt;/a&gt;
+ 很详细，但没有使用jekyll框架，它是基于成品修改的，不够个性化&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html&quot;&gt;阮一峰的网络日志&lt;/a&gt; 推荐看一下&lt;/p&gt;
 </description>
         <pubDate>Mon, 22 Apr 2019 00:00:00 +0000</pubDate>
-        <link>/2019/04/22/blog/</link>
-        <guid isPermaLink="true">/2019/04/22/blog/</guid>
+        <link>http://localhost:4000/2019/04/22/blog/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/22/blog/</guid>
         
         <category>github</category>
         
@@ -341,10 +343,92 @@ https://www.zhihu.com/question/19860216&lt;br /&gt;
 https://www.zhihu.com/question/20597473&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Jan 2019 00:00:00 +0000</pubDate>
-        <link>/2019/01/07/Web%E5%88%86%E4%BA%AB/</link>
-        <guid isPermaLink="true">/2019/01/07/Web%E5%88%86%E4%BA%AB/</guid>
+        <link>http://localhost:4000/2019/01/07/Web%E5%88%86%E4%BA%AB/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/01/07/Web%E5%88%86%E4%BA%AB/</guid>
         
         <category>Web</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Ubuntu 18.04 配置指南2</title>
+        <description>&lt;h1 id=&quot;ubuntu1804-配置2&quot;&gt;Ubuntu18.04 配置(2)&lt;/h1&gt;
+
+&lt;h2 id=&quot;用户界面配置美化桌面环境&quot;&gt;用户界面配置+美化桌面环境&lt;/h2&gt;
+&lt;h3 id=&quot;tweaks-修改界面&quot;&gt;Tweaks 修改界面&lt;/h3&gt;
+&lt;p&gt;安装 tweak &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install ubuntu-tweak&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;修改字体大小&lt;/li&gt;
+  &lt;li&gt;整体缩放&lt;/li&gt;
+  &lt;li&gt;桌面图标（家目录、回收站等）&lt;/li&gt;
+  &lt;li&gt;主题样式&lt;/li&gt;
+  &lt;li&gt;gnome-shell 扩展&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;安装插件扩展   &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install gnome-shell-extensions&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Dash to panel 或 Dash to dock 修改Dock栏样式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;微软雅黑字体&quot;&gt;微软雅黑字体&lt;/h3&gt;
+&lt;p&gt;网上下载 msyh.ttf 安装&lt;br /&gt;
+设置浏览器字体为微软雅黑&lt;br /&gt;
+终端中文字体解决
+https://gist.github.com/lihk11/23fd0c2e3f1bff966269dbeb73aaab13&lt;/p&gt;
+
+&lt;h3 id=&quot;文件浏览器设置总是显示路径&quot;&gt;文件浏览器设置—总是显示路径&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;gsettings set org.gnome.nautilus.preferences always-use-location-entry true&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;快捷键失效问题&quot;&gt;快捷键失效问题&lt;/h3&gt;
+&lt;p&gt;注销、锁定后再次进入界面  重启gnome  Alt+F2 输入r&lt;/p&gt;
+
+&lt;h3 id=&quot;显示休眠睡眠按钮&quot;&gt;显示休眠、睡眠按钮&lt;/h3&gt;
+&lt;p&gt;— 安装 suspend button 插件
+https://askubuntu.com/questions/967205/where-is-the-suspend-hibernate-button-in-gnome-shell&lt;/p&gt;
+
+&lt;p&gt;— 安装 Hibernate 插件
+http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;What is the difference between Hibernate and Suspend？&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Suspend does not turn off your computer. It puts the computer and all peripherals on a low power consumption mode. If the battery runs out or the computer turns off for some reason, the current session and unsaved changes will be lost.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Hibernate saves the state of your computer to the hard disk and completely powers off. When resuming, the saved state is restored to RAM.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;设置浅休眠时 不锁定
+&lt;code class=&quot;highlighter-rouge&quot;&gt;gsettings set org.gnome.desktop.screensaver ubuntu-lock-on-suspend false&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;终端大小写不敏感&quot;&gt;终端大小写不敏感&lt;/h2&gt;
+&lt;p&gt;编辑~/.inputrc（没有的话，就新建一个），在最后加一行： 
+set completion-ignore-case on
+保存，重新打开终端就可以了。&lt;/p&gt;
+
+&lt;h2 id=&quot;自定义app&quot;&gt;自定义APP&lt;/h2&gt;
+&lt;p&gt;https://askubuntu.com/questions/403766/duplicate-icons-for-manually-created-gnome-launcher-items
+https://blog.csdn.net/yanxiangtianji/article/details/81083299&lt;/p&gt;
+
+&lt;h3 id=&quot;其他问题&quot;&gt;其他问题&lt;/h3&gt;
+&lt;p&gt;锁定后 重启gnome-shell以恢复自定义快捷键&lt;br /&gt;
+https://askubuntu.com/questions/455301/how-to-restart-gnome-shell-after-it-became-unresponsive-freeze/496999
+https://askubuntu.com/questions/92218/how-to-execute-a-command-after-resume-from-suspend&lt;/p&gt;
+
+&lt;p&gt;sublime输入中文问题&lt;br /&gt;
+https://github.com/lyfeyaj/sublime-text-imfix&lt;/p&gt;
+</description>
+        <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%972/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%972/</guid>
+        
+        <category>Ubuntu</category>
+        
+        <category>配置</category>
         
         
       </item>
@@ -438,7 +522,8 @@ Ubuntu 官方软件源中包含了 Ubuntu 系统中所用到的绝大部分的�
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;科学上网&quot;&gt;科学上网&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;安装Chrome 同时保留 Firefox(很重要！！！！)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装Chrome 同时保留 Firefox(很重要！！！！)&lt;/strong&gt;&lt;br /&gt;
+在抓包的时候Chrome, Firefox各有优缺点。&lt;/p&gt;
 
 &lt;p&gt;Firefox不能翻墙问题&lt;/p&gt;
 &lt;blockquote&gt;
@@ -494,8 +579,8 @@ ubuntu:~$ git config --global user.email &quot;youremail@address.here&quot;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
-        <link>/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</link>
-        <guid isPermaLink="true">/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</guid>
+        <link>http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/08/01/Ubuntu%E8%A3%85%E6%9C%BA%E6%8C%87%E5%8D%97/</guid>
         
         <category>Ubuntu</category>
         
