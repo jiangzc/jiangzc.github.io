@@ -251,7 +251,7 @@ Linux中的 grep 是一种强大的文本搜索工具，它能使用正则表达
 /dev/sda3       117G   63G   49G  57% /data
 /dev/sda1       646M   52M  595M   9% /boot/efi
 </pre></td></tr></tbody></table></code></pre></div></div>
-<p>这里的116G 58G 53G 分别表示什么？ 哪个才是剩余空间？很容易不知所措<br />
+<p>这里的116G 58G 53G 分别表示什么？ 哪个才是剩余空间？<br />
 我们希望得到简单直接、一目了然的结果：</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -288,7 +288,9 @@ grep1() { awk -v pattern="${1:?pattern is empty}" 'NR==1 || $0~pattern' "${2:?fi
 <p>这些方法不够好、不够方便、不够优雅。<br />
 为什么？ 比如<code class="highlighter-rouge">sudo netstat -nplt</code> 标题在第二行，其余大多数命令的标题在第一行。不能简单根据行号来判断。再就是这样写比较麻烦，比 grep 差远了</p>
 
-<p>于是我用C语言写了一个程序 grep1 ，可以智能判断标题行，输出<strong>彩色标题</strong>后调用 grep 完成匹配搜索。因为是调用 grep 的，所以 grep 能用的参数这里也可以用。<br />
+<p>于是我用C语言写了一个程序 grep1 ，它可以智能判断标题行，输出<strong>彩色标题</strong>后调用 grep 完成匹配搜索。因为是调用 grep 的，所以 grep 能用的参数这里也可以用。 <br />
+效果对比<br />
+<img src="/img/in-post/grep-contrast.png" alt="" /><br />
 下面是源码 grep1.c</p>
 <div class="language-c highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -347,10 +349,6 @@ grep1() { awk -v pattern="${1:?pattern is empty}" 'NR==1 || $0~pattern' "${2:?fi
 55
 56
 57
-58
-59
-60
-61
 </pre></td><td class="rouge-code"><pre><span class="cp">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 #include &lt;string.h&gt;
@@ -367,35 +365,32 @@ grep1() { awk -v pattern="${1:?pattern is empty}" 'NR==1 || $0~pattern' "${2:?fi
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="k">const</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 <span class="p">{</span>
-    <span class="c1">// compose command</span>
-    <span class="kt">char</span> <span class="n">command</span><span class="p">[</span><span class="mi">300</span><span class="p">]</span> <span class="o">=</span> <span class="s">"grep --color=always --exclude-dir={.bzr,CVS,.git,.hg,.svn} "</span><span class="p">;</span>
+    <span class="cm">/* compose command */</span>
+    <span class="kt">char</span> <span class="n">command</span><span class="p">[</span><span class="mi">500</span><span class="p">]</span> <span class="o">=</span> <span class="s">"grep --color=always --exclude-dir={.bzr,CVS,.git,.hg,.svn} "</span><span class="p">;</span>
     <span class="kt">char</span> <span class="n">sep</span><span class="p">[]</span> <span class="o">=</span> <span class="s">" "</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="n">strcat</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">sep</span><span class="p">);</span>
         <span class="n">strcat</span><span class="p">(</span><span class="n">command</span><span class="p">,</span> <span class="n">argv</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
     <span class="p">}</span>
-    <span class="c1">// find title line</span>
-    <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">300</span><span class="p">];</span>
-    <span class="kt">char</span> <span class="n">flows</span><span class="p">[</span><span class="mi">1000</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
+    <span class="cm">/* find title line */</span>
+    <span class="kt">char</span> <span class="n">buffer</span><span class="p">[</span><span class="mi">500</span><span class="p">];</span>
+    <span class="kt">char</span> <span class="n">flows</span><span class="p">[</span><span class="mi">3000</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
     <span class="k">while</span> <span class="p">(</span><span class="n">fgets</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">buffer</span><span class="p">),</span> <span class="n">stdin</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">is_title</span><span class="p">(</span><span class="n">buffer</span><span class="p">))</span>
         <span class="p">{</span>
-            <span class="c1">// use green color to highlight title</span>
+            <span class="cm">/* use green color to highlight title */</span>
             <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\033</span><span class="s">[;32m"</span><span class="p">);</span>
             <span class="n">printf</span><span class="p">(</span><span class="s">"%s"</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
             <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\033</span><span class="s">[0m"</span><span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="k">else</span>
-        <span class="p">{</span>
-            <span class="c1">// save read string</span>
-            <span class="n">strncat</span><span class="p">(</span><span class="n">flows</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="p">(</span><span class="kt">size_t</span><span class="p">)(</span><span class="mi">1000</span> <span class="o">-</span> <span class="n">strlen</span><span class="p">(</span><span class="n">flows</span><span class="p">)));</span>
-        <span class="p">}</span>
+        <span class="cm">/* save read string */</span>
+        <span class="n">strncat</span><span class="p">(</span><span class="n">flows</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="p">(</span><span class="kt">size_t</span><span class="p">)(</span><span class="mi">3000</span> <span class="o">-</span> <span class="n">strlen</span><span class="p">(</span><span class="n">flows</span><span class="p">)));</span>
     <span class="p">}</span>
     <span class="n">fflush</span><span class="p">(</span><span class="n">stdout</span><span class="p">);</span>
-    <span class="c1">// call grep</span>
+    <span class="cm">/* call grep */</span>
     <span class="kt">FILE</span> <span class="o">*</span><span class="n">fp</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">c</span><span class="p">;</span>
     <span class="kt">char</span> <span class="o">*</span><span class="n">flow_point</span> <span class="o">=</span> <span class="n">flows</span><span class="p">;</span>
@@ -411,9 +406,8 @@ grep1() { awk -v pattern="${1:?pattern is empty}" 'NR==1 || $0~pattern' "${2:?fi
     <span class="p">}</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-
 </pre></td></tr></tbody></table></code></pre></div></div>
-<p>编译后移动到 /usr/local/bin 下，PATH环境变量一般包含 /usr/local/bin<br />
+<p>编译后移动到 /usr/local/bin/grep1 ，PATH环境变量一般包含 /usr/local/bin<br />
 用法示例</p>
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
@@ -446,8 +440,7 @@ jzc       2367  1.0  0.1 108680  9784 tty1     Sl+  Apr26   8:23 /home/jzc/kcptu
 jzc       2368  0.0  0.1  49604 15072 tty1     S+   Apr26   0:11 /usr/bin/python /home/jzc/.local/bin/sslocal <span class="nt">-c</span> /home/jzc/ss_kcptun.json
 jzc       8864  0.0  0.0   4508   712 pts/0    S+   00:15   0:00 grep1 kcp
 </pre></td></tr></tbody></table></code></pre></div></div>
-<p>效果对比<br />
-<img src="/img/in-post/grep-contrast.png" alt="" /></p>
+
 
 
                 <hr style="visibility: hidden;">
