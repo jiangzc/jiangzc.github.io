@@ -5,9 +5,31 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 28 Apr 2019 15:16:34 +0000</pubDate>
-    <lastBuildDate>Sun, 28 Apr 2019 15:16:34 +0000</lastBuildDate>
+    <pubDate>Mon, 29 Apr 2019 02:21:35 +0000</pubDate>
+    <lastBuildDate>Mon, 29 Apr 2019 02:21:35 +0000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>把萌萌哒的看板娘抱回家（转载）</title>
+        <description>&lt;h2 id=&quot;在网页中添加-live2d-看板娘&quot;&gt;在网页中添加 Live2D 看板娘&lt;/h2&gt;
+
+&lt;p&gt;项目地址：&lt;a href=&quot;https://github.com/stevenjoezhang/live2d-widget&quot;&gt;live2d-widget&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;克隆这个仓库到服务器上，并配置 autoload.js，修改其中的链接为各文件的绝对地址，即可在网页中添加 Live2D 看板娘。
+相对于市面上广为流传的版本，博主对触发动作和语言进行了魔改（针对 Hexo NexT 主题），调整了图标样式、元素定位，并解决了 CSS 的前缀等问题。
+更多内容可以参考项目文档及下方链接。
+快来把萌萌哒的看板娘抱回家吧！&lt;/p&gt;
+
+&lt;p&gt;转载：https://zhangshuqiao.org/2018-07/%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E6%B7%BB%E5%8A%A0Live2D%E7%9C%8B%E6%9D%BF%E5%A8%98/&lt;/p&gt;
+</description>
+        <pubDate>Fri, 26 Apr 2019 00:00:00 +0000</pubDate>
+        <link>http://localhost:4000/2019/04/26/live2d/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/04/26/live2d/</guid>
+        
+        <category>live2d</category>
+        
+        
+      </item>
     
       <item>
         <title>grep命令保留第一行（C语言实现）</title>
